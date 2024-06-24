@@ -95,9 +95,9 @@
         */
 
         let x = 12;
-        console.log(x); /* affiche 12 */
-        console.log(x++); /* affiche 12 puis passe la valeur de x à 13 */
-        console.log(x); /* affiche 13 */
+        console.log(x);     /* affiche 12 */
+        console.log(x++);   /* affiche 12 puis passe la valeur de x à 13 */
+        console.log(x);     /* affiche 13 */
 
         console.log(++x); /* passe la valeur dse x à 14 puis ça l'affiche affiche */
 
@@ -191,6 +191,82 @@
         afficher le résultat de leur addition, soustraction multiplication et division
         */
 
+        let c = 12;
+        let d = 42;
+        console.log( ` ${c} + ${d} = ${c + d} `);
+        console.log( ` ${c} - ${d} = ${c-d} ` );
+        console.log( ` ${c} * ${d} = ${c*d} ` );
+        console.log( ` ${c} / ${d} = ${c/d} ` );
+        console.log( ` ${c} % ${d} = ${c%d} ` );
+
+        /*
+         créer un tableau s'appelant toto contenant les variables suivantes
+
+         12, 42, Marguerite et Pimprenelle
+        
+         l'afficher dans la console
+
+         ensuite y ajouter la valeur Megatron
+        */
+
+        let toto = [12, 42, 'Marguerite', 'Pimprenelle'];
+        console.log(toto);
+        console.table(toto);
+        
+        toto.push('Megatron');
+        console.log(toto);
+        console.table(toto);
+
+        /* Les boucles sont des moyens de partourir des tableaux ou certains élément itérables */
+
+        /* la boucle pour : trois pour différent */
+
+        console.log('---- boucle for -----------');
+        for(let i = 0; i < cars.length; i++){
+            console.log(cars[i]);
+        }
+
+        console.log('---- boucle for in -----------');
+        for(key in cars){
+            console.log(cars[key]);
+        }
+
+        console.log('---- boucle for of -----------');
+        for(value of cars){
+            console.log(value);
+        }
+        
+        /* tant que */
+        console.log('---- boucle while -----------');
+        let i = 0;
+        while(i < 6){
+            console.log(i);
+            i = i + 1;
+        }
+        
+        /* faire tant que */
+        console.log('---- boucle do while -----------');
+        i = 0;
+        do{
+            console.log(i);
+            i = i + 1;
+        }while(i < 0);
+        
+        /* méthodes de tableau pour les parcourir */
+        /* .map() */
+        
+        console.log('---- méthode de tableau .map() -----------');
+        cars.map( function(value, index, tab){
+            console.log( `valeur : ${value}, index : ${index}, le tableau : ${tab} ` );
+        } );
+        
+        /* .foreach() : sert aussi a parcouri les objets itérable qui ne sont pas des tableaux */
+        
+        console.log('---- méthode de parcour d\'objet itérable .foreach() -----------');
+        cars.forEach( function(value, index, tab){
+            console.log( `valeur : ${value}, index : ${index}, le tableau : ${tab} ` );
+        } );
+ 
     </script>
 </head>
 
