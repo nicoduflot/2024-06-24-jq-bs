@@ -266,6 +266,59 @@
         cars.forEach( function(value, index, tab){
             console.log( `valeur : ${value}, index : ${index}, le tableau : ${tab} ` );
         } );
+
+        const monObjet = {
+            age: 44,
+            bonjour : function(){
+                return `bonjour, j'ai ${this.age}`;
+            }
+        };
+
+        console.log(monObjet.bonjour());
+
+        console.log(Math.pow(2, 3));
+
+        /* les fonctions */
+        /* exemple de fonction qui admet des paramètres et qui renvoit un résultat */
+        function addition(a, b){
+            return a + b;
+        }
+
+        let res = addition(12, 42);
+        console.log(res);
+        console.log(addition(12, 42));
+
+        /* exemple de fonction qui admet des paramètres sans renvoyer de résultat */
+        function tata(prenom = 'Kitty'){
+            console.log(prenom);
+        }
+
+        tata('Nicolas');
+        tata();
+
+        /* callback function ou Fonction de rappel ou fonction anonyme */
+
+        const titi = function(){
+            console.log('tata');
+        }
+
+        titi();
+
+        /* comment réellement lancer une fonction anonyme sans l'assigner à une variable */
+        /* 
+        fonction auto-éxécutée 
+            (
+                function(a, b){
+                    console.log(a + b);
+                }
+            )(12, 42);
+        */
+
+        (
+            function(a, b){
+                console.log(a + b);
+            }
+        )(12, 42);
  
     </script>
 </head>
