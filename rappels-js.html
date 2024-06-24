@@ -14,7 +14,153 @@
     <script src="./js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <script>
+        console.log('console.log permet d\'écrire ou d\'afficher le contenu d\'une variable dans la console du navigateur');
+        console.error('affiche un message sous la forme d\'une erreur dans la console');
+        console.table(['toto', 'tata', 'titi']);
+        // commentaire en une ligne A ÉVITER !
+        /*
+        commentaire en bloc
+        */
+        console.log('a bah voilà !');
+        /* variables */
+        var prenom = 'Jean'; /* on n'utilise plus var depuis ES6 */
+        /* 
+        Constante : avec ES6, il est préconisé d'utiliser au maximum la déclaration de constantes pour toutes les variables qui ne changeront jamais de contenu dans le script 
+        */
+        const joursSemaine = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
+        /* les variables qui vont évoluer seront déclarées avec le mot clef let */
+        let nom = 'Durand';
+        nom = 'Neige';
+
+        /*
+        On utilisera aussi principalement les constantes lors de la manipulation du DOM : tous les éléments de la page sont des objets avec la même structure et les mêmes méthodes
+        */
+
+        /* On ne déclare le type des variables à leur création, c'est ce qu'elles contiennent qui défini leur type */
+
+        console.log(typeof nom);
+        nom = 42;
+        console.log(typeof nom);
+
+        /* on peut changer le type du conteneur d'une variable en changeant son contenu => transtypage */
+
+        nom = nom + 'toto';
+        console.log(nom);
+        console.log(typeof nom);
+
+        const ageActuel = 44;
+        const depActuel = 59;
+        const prenomActuel = 'Nicolas';
+
+        /* bonjour, je m'appelle prenomActuel, j'ai ageActuel et j'habite dans le département depActuel */
+        /* on n'utilise plus la concaténation avec le signe + pour créer des chaîne de caractère contenant des variables */
+        console.log('bonjour, je m\'appelle ' + prenomActuel + ', j\'ai ' + ageActuel + ' et j\'habite dans le département ' + depActuel);
+        /* on va utiliser l'interpolation de texte */
+        console.log( `bonjour, je m'appelle ${prenomActuel}, j'ai ${ageActuel} et j'habite dans le département ${depActuel}` );
+        console.log( `le total de l'addition est : ${12 + 125.3}` );
+
+        /*
+        les types de variables
+        Deux catégories de variables
+        [Type primitif]
+            int => nombre entier (sous-type de number => un nombre)
+            float => nombre à virgule flottante (sous-type de number => un nombre)
+            bool => booléeen (vrai ou faux)
         
+        [Type référence]
+            string => chaîne de caractère
+            array => tableau de variables
+            object => les objets
+            JSON => JavaScript Object Notation
+        */
+
+        /*
+        Opérateurs :
+        Mathématiques : 
+            + addition 
+            - soustraction 
+            * multiplication 
+            / division 
+            % modulo : récupère le reste d'une division entière
+        */
+        console.log(`reste de la division entière 5/2 : ${5%2}`);
+        /*
+            ** puissance, remplace Math.pow()
+        */
+        console.log(`avant **, Math.pow(2, 3) : ${Math.pow(2,3)}`);
+        console.log(`avec **, 2**3 : ${2**3}`);
+
+        /*
+        Incrémentation : ++ --
+        */
+
+        let x = 12;
+        console.log(x); /* affiche 12 */
+        console.log(x++); /* affiche 12 puis passe la valeur de x à 13 */
+        console.log(x); /* affiche 13 */
+
+        console.log(++x); /* passe la valeur dse x à 14 puis ça l'affiche affiche */
+
+        /* les normes Ecmascript préconisent d'abandonner les propriétés raccourcies pour l'incrémentation & la décrémentation */
+        /* on utlisiera plutôt la forme suivante */
+        console.log(x);
+        x = x + 1;
+        console.log(x);
+
+        /* 
+        Opérateurs de comparaison 
+        
+        > supérieur à
+        < inférieur à
+        >= supérieur ou égal à
+        <= inférieur ou égal à
+        == égalité de valeur (non stricte)
+        */
+        console.log(`2 == 2 : ${2 == 2}`);
+        console.log(`2 == '2' : ${2 == '2'}`);
+        /*
+        === égalité de valeur et de type (égalité stricte)
+        */
+        console.log(`2 == 2 : ${2 === 2}`);
+        console.log(`2 == '2' : ${2 === '2'}`);
+        /*
+        même chose pour : 
+        != différent en valeur (non strict)
+        !== différent en valeur ET en type (stricte)
+        */
+        const a = 5;
+        const b = '5';
+
+        console.log(parseFloat <= b);
+        /* <== ou >== n'existe pas encore en JS */
+
+        /* 
+        Opérateurs logiques
+        && ET
+
+        a && b si a est vrai et b est vrai alors retourne vrai
+        a && b si a est vrai et b est faux alors retourne faux
+        a && b si a est faux et b est vrai alors retourne faux
+        a && b si a est faux et b est faux alors retourne faux
+
+        || OU 
+        a || b si a est vrai et b est vrai alors retourne vrai
+        a || b si a est vrai et b est faux alors retourne vrai
+        a || b si a est faux et b est vrai alors retourne vrai
+        a || b si a est faux et b est faux alors retourne faux
+
+        ! NON
+        !a et a est vrai retourne faux
+        !a et a est faux retourne vrai
+
+        ^ OU EXCLUSIF BINAIRE (X-OR)
+        a ^ b si a est vrai et b est vrai alors retourne faux
+        a ^ b si a est vrai et b est faux alors retourne vrai
+        a ^ b si a est faux et b est vrai alors retourne vrai
+        a ^ b si a est faux et b est faux alors retourne faux
+        
+        */
+
     </script>
 </head>
 
@@ -80,7 +226,7 @@
             <h2>Rappels Javascript</h2>
             <article>
                 <header>
-                    <h3>Petits</h3>
+                    <h3>Petits Rappels Javascript</h3>
                     <p>
                         On va faire un petit rappel sur Javascript, on utilisera principalement la console du navigateur
                     </p>
