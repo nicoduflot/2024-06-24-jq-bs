@@ -158,7 +158,37 @@
         a ^ b si a est vrai et b est faux alors retourne vrai
         a ^ b si a est faux et b est vrai alors retourne vrai
         a ^ b si a est faux et b est faux alors retourne faux
+
+        */
+
+        /* tableaux */
+        /*
+        var cars = new Array('Peugeot', 'Ford');
+        */
+        let cars = ['Peugeot', 'Ford'];
+        console.log(typeof cars);
+
+        console.log(cars);
         
+        /* ajouter une valeur au tableau */
+        
+        cars.push('Hyundai');
+        console.log(cars);
+        cars.push('Fiat', 'Alpine');
+        console.log(cars);
+
+        /*let carsClone = cars;*/
+        let carsClone = cars.slice();
+
+        carsClone.push('Dacia');
+        console.log(cars, carsClone);
+
+        /* 
+        créer deux variables en let 
+        c et d
+        c recevra 12
+        d recevra 42
+        afficher le résultat de leur addition, soustraction multiplication et division
         */
 
     </script>
