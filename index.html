@@ -44,6 +44,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./ajax.html">JQuery Ajax</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link goBottom" href="#">Bas de page</a>
+                    </li>
                     <!--
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -233,8 +236,14 @@
                     Un évènement est une action remplie par le navigateur 
                     ou via le navigateur : depuis la souris, clavier, clic sur la page, etc.
                 </p>
+                <p>
+                    Avant la version 3.3 de JQuery, on utilisait une méthode par événement (liste non exhaustive dans les articles suivant)
+                </p>
+                <p>
+                    Depuis la version 3.3, ces méthodes sont dépréciées (mais pour l'instant v 3.7.1 toujours utilisables) et il est préconisé d'utiliser la méthode .on() (gestionnaire d'événement)
+                </p>
             </article>
-            <article>
+            <article class="col-lg-6 my-3">
                 <h2>Évènements sur la souris</h2>
                 <p class="alert alert-warning">
                     Ces méthodes fonctionnent toujours mais ont été dépréciée depuis JQuery 3.3
@@ -282,7 +291,7 @@
                     </tbody>
                 </table>
             </article>
-            <article>
+            <article class="col-lg-6 my-3">
                 <h3>Évènement au clavier</h3>
                 <p class="alert alert-warning">
                     Ces méthodes fonctionnent toujours mais ont été dépréciée depuis JQuery 3.3
@@ -324,7 +333,7 @@
             </article>
         </section>
         <section class="row">
-            <article>
+            <article class="col-lg-6 my-3">
                 <h3>Évènements sur les formulaires</h3>
                 <p class="alert alert-warning">
                     Ces méthodes fonctionnent toujours mais ont été dépréciée depuis JQuery 3.3
@@ -356,9 +365,9 @@
                     </tbody>
                 </table>
             </article>
-            <article>
+            <article class="col-lg-6 my-3">
                 <h3>Déclenchement virtuel</h3>
-                <p id="clickMeVirtuel">
+                <p id="clickMeVirtual">
                     On peut déclencher virtuellement des évènements associés à des éléments.
                 </p>
             </article>
@@ -380,21 +389,16 @@
             </article>
         </section>
         <section class="row">
-            <article>
+            <article class="col-lg-6 my-3">
                 <h3>Gestionnaire d'évènements</h3>
                 <p>
                     Le gestionnaire d'évènements permet de configurer 
                     sur une seul élément plusieurs écouteurs différents (click, bdclick, hover, etc.).
                 </p>
-                <p class="evnt01 special">
-                    Gestion même comportement selon deux évènements différents
-                </p>
-                <p class="evnt02 special">
-                    Gestion par un gestionnaire d'évènements : 
-                    un comportement différent par évènement.
-                </p>
+                <textarea type="text" class="form-control evnt01 special">Gestion même comportement selon deux évènements différents</textarea>
+                <textarea type="text" type="text" class="form-control evnt02 special">Gestion par un gestionnaire d'évènements : un comportement différent par évènement.</textarea>
             </article>
-            <article>
+            <article class="col-lg-6 my-3">
                 <h3>La délégation</h3>
                 <p>
                     La délégation permet de repérer un évènement sur un élément ajouté après 

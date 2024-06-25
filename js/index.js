@@ -106,6 +106,35 @@ jQuery(function($){
         }
     });
 
+    /* il est possible de documenter les méthode en utilisant jsdoc */
+
+    /**
+     * Renvoi un entier compris entre [min, max]
+     * @param {int} min - valeur minimum du random comprise
+     * @param {int} max - valeur maximum du random comprise
+     * @returns {int}
+     */
+    function randomize(min = 0, max = 0){
+        if(isNaN(parseFloat(min)) || isNaN(parseFloat(max))){
+            return 0;
+        }else{
+            if(parseFloat(max) <= parseFloat(min)){
+                return 0;
+            }else{
+                return Math.floor(Math.random() * (parseFloat(max) - parseFloat(min) + 1)) + parseFloat(min);
+            }
+        }
+    }
+
+    function checkLogin(login){
+        /* faire un appel ajax vers la tables des utilisateurs inscrit, vérifier si un login similaire existe, si oui, compter le nombre d'utilisateur et ajouter 1 */
+        const valRandom = randomize(1, 5);
+        if(valRandom === 5){
+            login = `${login}-1`;
+        }
+        return login;
+    }
+
     /* empêcher l'envoi de formulaire si nom est vide */
     $('#formContact').on('submit', function(evenement){
         /* empêche de comportement par défaut du document, de l'élément, etc par rapport à l'événement qui l'impacte */
@@ -118,11 +147,75 @@ jQuery(function($){
         if(nom !== '' && prenom !== ''){
             /* si le formulaire possède les informations nécessaire, on     arrête d'écouter son événement submit */
             $('#formContact').off('submit');
-            /* générer un login par défaut si quand le formulaire est envoyé le login est vide */
-            
+            /* générer un login par défaut si, quand le formulaire est envoyé le login est vide */
+            if($('#login').val() === ''){
+                let login = `${nom.toLowerCase()}.${prenom.toLowerCase()}`;
+                login = checkLogin(login);
+                $('#login').val(login);
+            }
             $('#formContact').trigger('submit');
         }
     });
 
+    /* $(this) */
+
+    $('p.demoThis').on('click', function(){
+        $(this).css('color', 'red');
+        $(this).css('fontWeight', 'bold');
+    });
+
+    $('.resetColors').on('click', function(){
+        $('p.demoThis').each( function(){
+            $(this).removeAttr('style');
+        });
+    });
+
+    /* surveiller les touches appuyée */
+    $(document).on('keyup', function(evenement){
+        /*
+        console.log(evenement);
+        console.log(evenement.which);
+        console.log(evenement.key);
+        */
+        $('p#quelleTouche').text(`La touche ${evenement.key}, code clavier ${evenement.which}`);
+    });
+
+    $('p#clickMeVirtual').on('click', function(){
+        console.log('on a cliqué sur le p.clickMeVirtual');
+    });
+
+    /* déclencher le click automatique sur le p.clickMeVirtual */
+    $('p#clickMeVirtual').trigger('click');
+
+    /* preventdefault d'un événement sur un élément */
+    $('a.backUp').on('click', function(evenement){
+        evenement.preventDefault();
+        /*$('html, body').animate({scrollTop: 0});*/
+        $('html, body').scrollTop(0);
+    });
+
+    $('a.goBottom').on('click', function(e){
+        e.preventDefault();
+        console.log($(document).height());
+        $('html, body').scrollTop( $(document).height() );
+    });
+
+    /* utiliser le gestionnaire d'événement : des actions similaires ou différentes selon des événements différents sur un même élément */
+    
+    $('.evnt01').on('focus dblclick', function(){
+        console.log($('.evnt01').text());
+    });
+
+    $('.evnt02').on({
+        focus :function(){
+            console.log('focus sur evnt02');
+        },
+        dblclick : function(){
+            console.log('double click sur evnt02');
+        },
+        blur : function(){
+            console.log('curseur hors evnt02');
+        }
+    });
     
 });

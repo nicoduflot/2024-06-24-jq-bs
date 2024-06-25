@@ -1,3 +1,7 @@
 .hidden{
     display: none;
 }
+
+.demoThis, .resetColors{
+    cursor: pointer;
+}
