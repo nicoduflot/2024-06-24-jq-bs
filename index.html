@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation JQUERY - Rappels JS</title>
+    <!--
+    Ajout des fichiers JS et CSS pour Bootstrap (et JQuery)
+    -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/popper.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header class="bg-dark text-white py-2">
+        <div class="container">
+            <h1>JQUERY <small>Formation DAWAN</small></h1>
+        </div>
+    </header>
+    <nav class="navbar bg-dark navbar-expand-md" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Accueil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#nav-princ" aria-controls="nav-princ" aria-expanded="false"
+                aria-label="Active la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-princ">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./rappels-js.html">Rappels JS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Introduction JQuery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./jquerycss.html">JQuery & CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ajax.html">JQuery Ajax</a>
+                    </li>
+                    <!--
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                    -->
+                </ul>
+                <!--
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                -->
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <h2>Inclure JQuery dans les pages</h2>
+        <section>
+            <article>
+                <h3>Un framework</h3>
+                <p>
+                    JQuery est un framework, un cadre de travail ou un ensemble de fonctions 
+                    javascript organisées en bibliothèques.
+                    Le but de JQuery est de simplifier ke JS interractif, 
+                    en simplifiant l'écriture des appels de fonctions, d'évènements, la manipulation 
+                    du DOM, etc.
+                </p>
+            </article>
+            <article>
+                <h3>"Installer" JQuery</h3>
+                <p>
+                    Il suffit de télécharger la dernière version du fichier 
+                    jquery sur le site jquery.com, de le déposer dans un répertoire 
+                    dans le projet et d'y faire appel dans le head de la page.
+                </p>
+            </article>
+            <article>
+                <h3>Démarrer avec JQuery</h3>
+                <p>
+                    Comme avec JS, il faut que le DOM soit complètement chargé pour 
+                    qu'on puisse le manipuler avec JQuery.
+                </p>
+                <p>
+                    Pour cela, on va utilise la fonction jQuery .ready(), qui ne permettra 
+                    d'utiliser le code à l'intérieur qu'à partir du moment ou le 
+                    DOM est complètement chargé.
+                </p>
+            </article>
+            <article>
+                <h3>Éviter les conflits</h3>
+                <p>
+                    Il est possible d'utiliser un alias pour utiliser JQuery : $() 
+                    Mais cet alias est souvent utilisé par beaucoup d'autres bibliothèques Js qui 
+                    pourraient être appelée en même temps que JQuery. En changeant la déclaration on peut 
+                    facilement éviter ce conflit
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2>Principe de fonctionnement</h2>
+            <article>
+                <p>
+                    JQuery reponse principalement sur l'alias $(), on va ciblé à l'aide des sélecteurs 
+                    HTML les éléments de la page sur lesquels interviadra le script.
+                </p>
+                <button id="firstBlood">Cliquez ici</button>
+            </article>
+        </section>
+        <section>
+            <h2>Les sélecteurs</h2>
+            <article>
+                <h3>Les sélecteurs CSS</h3>
+                <p>
+                    On peut utiliser des sélecteurs semblables aux sélécteurs CSS pour cibles les éléments.
+                    Un élément peut être ciblé en balise &lt;p&gt;, 
+                    par id en utilisant #, par classe avec le . (point) .
+                </p>
+                <p>
+                    Tous les paragraphe de la page ont maintenant une action 
+                    liée à l'évènement "click".
+                </p>
+                <p class="special">
+                    Paragraphe spécial
+                </p>
+            </article>
+            <article>
+                <h3>Sélécteurs plus poussés</h3>
+                <p>
+                    Il est possible de cibler des éléments selon leur place.
+                </p>
+                <div class="divLettreCercle">
+                    A
+                </div>
+                <div class="divLettreCercle">
+                    B
+                </div>
+                <div class="divLettreCercle">
+                    C
+                </div>
+                <p>
+                    On fait aussi la différence entre les éléments contenus dans d'autres éléments (parents) 
+                    et les descendants (enfants) directs d'un autre élément
+                </p>
+                <p>
+                    <a href="#" class="lien">Lien</a>
+                    <a href="#" class="lienDePage">Lien de page</a>
+                    <a href="#" class="lien">Lien</a>
+                    <a href="#">
+                        <i class="lien">Lien</i>
+                    </a>
+                </p>
+            </article>
+            <article>
+                <h3>Cas des formulaires</h3>
+                <form method="POST" id="formContact">
+                    <p>
+                        Nom : <input type="text" id="nom" name="nom" />
+                    </p>
+                    <p>
+                        Prénom : <input type="text" id="prenom" name="prenom" />
+                    </p>
+                    <input type="submit" id="submitForm" name="submitForm" value="Envoyer">
+                </form>
+            </article>
+            <article>
+                <h3>Les sélecteur $(this)</h3>
+                <p class="demoThis">
+                    Le sélecteur $(this) permet d'associer une action
+                </p>
+                <p class="demoThis">
+                    à l'objet courant qu'il représente
+                </p>
+                <p class="demoThis">
+                    quand on appelle la fonction depuis un élément
+                </p>
+                <p class="demoThis">
+                    $(this) permet de savoir quel élément d'une multitude a été choisis
+                </p>
+                <p class="resetColors">
+                    Cliquez ici pour décolorer les paragraphes
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2>Les évènements</h2>
+            <article>
+                <h2>Définition d'un évènement</h2>
+                <p>
+                    Un évènement est une action remplie par le navigateur 
+                    ou via le navigateur : depuis la souris, clavier, clic sur la page, etc.
+                </p>
+            </article>
+            <article>
+                <h2>Évènements sur la souris</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Action</th>
+                            <th>Fonction</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clic</td>
+                            <td>click()</td>
+                        </tr>
+                        <tr>
+                            <td>Double clic</td>
+                            <td>dblclick()</td>
+                        </tr>
+                        <tr>
+                            <td>Survol de la souris</td>
+                            <td>hover()</td>
+                        </tr>
+                        <tr>
+                            <td>Rentrer dans un élément</td>
+                            <td>mouseenter()</td>
+                        </tr>
+                        <tr>
+                            <td>Quitter un élément</td>
+                            <td>mouseleave()</td>
+                        </tr>
+                        <tr>
+                            <td>Presser un bouton de la souris</td>
+                            <td>mousedown()</td>
+                        </tr>
+                        <tr>
+                            <td>Relâcher un bouton de la souris</td>
+                            <td>mouseup()</td>
+                        </tr>
+                        <tr>
+                            <td>Scroller (utiliser la roulette)</td>
+                            <td>scroll()</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3>Évènement au clavier</h3>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Fonction</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Touche du clavier est enfoncée</td>
+                        <td>keydown()</td>
+                    </tr>
+                    <tr>
+                        <td>Maintient d'une touche enfoncée</td>
+                        <td>keypress()</td>
+                    </tr>
+                    <tr>
+                        <td>Relâchement d'une touche préalablement enfoncée</td>
+                        <td>keyup()</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3>Quelle touche ?</h3>
+                <p>
+                    Pour lire la touche utilisée par l'utilisateur,il faut faire attention car la 
+                    fonction a utiliser sur l'évènement diffère selon les navigateurs.
+                    Heureusement, seulement deux fonction différentes et non une par 
+                    navigateur existant.
+                </p>
+                <p id="quelleTouche">
+
+                </p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>Évènements sur les formulaires</h3>
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Fonction</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Focalisation</td>
+                        <td>focus()</td>
+                    </tr>
+                    <tr>
+                        <td>Sélection (p.e. dans une liste)</td>
+                        <td>select()</td>
+                    </tr>
+                    <tr>
+                        <td>Changement de valeur</td>
+                        <td>change()</td>
+                    </tr>
+                    <tr>
+                        <td>Envoi du formulaire</td>
+                        <td>submit()</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3>Déclenchement virtuel</h3>
+                <p id="clickMeVirtuel">
+                    On peut déclencher virtuellement des évènements associés à des éléments.
+                </p>
+            </article>
+            <article>
+                <h3>Annuler un comportement par défaut</h3>
+                <p>
+                    On peut annuler un comportement par défaut, par exemple la soumission d'un formulaire 
+                    quand l'utilisateur clique sur la soummision du formulaire.
+                    C'est souvent utilisé dans ce cas pour vérifier la bonne complétion des champs 
+                    ensuite si il manque des infos on le signale, sinon on soumet via script 
+                    le formulaire correctement remplie.
+                </p>
+                <p>
+                    on utilise pour cela .preventDefault() sur l'évènement que l'on souhaite empêcher.
+                </p>
+                <p>
+                    <a href="#" class="backUp">revenir en haut</a>
+                </p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>Gestionnaire d'évènements</h3>
+                <p>
+                    Le gestionnaire d'évènements permet de configurer 
+                    sur une seul élément plusieurs écouteurs différents (click, bdclick, hover, etc.).
+                </p>
+                <p class="evnt01 special">
+                    Gestion même comportement selon deux évènements différents
+                </p>
+                <p class="evnt02 special">
+                    Gestion par un gestionnaire d'évènements : 
+                    un comportement différent par évènement.
+                </p>
+            </article>
+            <article>
+                <h3>La délégation</h3>
+                <p>
+                    La délégation permet de repérer un évènement sur un élément ajouté après 
+                    le chargement du DOM (donc inécoutable avec $("#element")).
+                </p>
+                <p>
+                    On peut en revanche écouter l'évèment sur un élément parent qui lui a été 
+                    chargé dans le DOM
+                </p>
+                <p>
+                    Pour la délégation, il faut trois éléments :
+                </p>
+                <ul>
+                    <li>Le type d'évènement que l'on écoute</li>
+                    <li>L'élément parent écouté qui nous renvoie la cible de l'évènement</li>
+                    <li>La fonction en retour liée à l'évènement</li>
+                </ul>
+                <tableid="tableGenerate">
+                    <thead>
+                        <tr>
+                            <th>Col 1</th>
+                            <th>Col 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </tableid=>
+            </article>
+        </section>
+        <section>
+            <h2>Les espaces de noms</h2>
+            <article>
+                <h3>Définition</h3>
+                <p>
+                    Permettent de désigner un évènement très précisément,
+                    ils sont a utiliser avec les gestionnaires d'évènements.
+                    Ils ont une syntaxe particulière :
+                </p>
+                <p>
+                    event.namespace
+                </p>
+                <ul>
+                    <li>event : le type d'évènement qui "subi" un espace de nom</li>
+                    <li>le point fait la liaison avec l'espace de nom</li>
+                    <li>namespace : la dénomination de l'espace de nom</li>
+                </ul>
+                <p class="special">
+                    <button id="nameSpace">Test du namespace</button>
+                </p>
+            </article>
+            <article>
+                <h3>Utilité des namespace</h3>
+                <p>
+                    Différentes fonctions peuvent 
+                    être exécutées depuis un même évènement
+                </p>
+                <ul>
+                    <li>On peut définir plusieurs espaces de noms pour un même évènement</li>
+                    <li>On ne peut pas appeler plusieurs espaces de noms en même temps<li>
+                    <li>
+                        On peut aussi préciser le type d'évènement sans préciser l'espace de nom, 
+                        toutes les action liées à l'évènement seront exécutées sans tenir compte du namespace.
+                    </li>
+                    <li>
+                        On ne peut pas préciser un namespace sans l'associer à un évènement.
+                    </li>
+                </ul>
+                <code>
+                    on("click.nom.prenom", ...)
+                    <span class="commentaire">/* défini en même temps click.nom et click.prenom */</span><br />
+                    trigger("click.nom.prenom") <span class="commentaire">/* ne marche pas */</span><br />
+                    <span class="commentaire">//on fera</span><br />
+                    trigger("click.nom")<br />
+                    trigger("click.prenom")<br />
+                    trigger("click")
+                    <span class="commentaire">/* déclenche toutes les fonctions associées aux espaces de noms sur le clic */</span><br />
+                    trigger(".nom") <span class="commentaire">/* ne fonctionne pas */</span>
+                </code>
+            </article>
+            <article>
+                <h3>Supprimer les écouteurs d'évènements</h3>
+                <p>
+                    La fonction inverse de .on() est .off() et 
+                    permet de supprimer les écouteurs d'évènement mis en place.
+                </p>
+                <p>
+                    si on utilise .on() sans attribut, on annule tous les écouteurs de l'élément.
+                </p>
+                <p>
+                    Dans les arguments de .off() on peut préciser quel event on annule sur l'élément
+                </p>
+                <button id="annuleCptClick">Annuler le cptClick P</button> 
+                <button id="reactiveCptClick">réactive le le cptClick P</button> 
+                <button id="annuleClickBody">annule tous les event click body délégués</button> 
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
