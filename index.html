@@ -178,14 +178,32 @@
             </article>
             <article class="col-lg-6 my-3">
                 <h3>Cas des formulaires</h3>
-                <form method="POST" id="formContact">
+                <form method="get" id="formContact">
                     <p>
-                        Nom : <input type="text" id="nom" name="nom" />
+                        <label class="form-label" for="nom">Nom :</label> <input class="form-control" type="text" id="nom" name="nom" aria-describedby="info-nom" />
                     </p>
+                    <div class="info-form alert alert-info hidden" id="info-nom">
+                        Veuillez écrire Votre nom de famille, ce champ est obligatoire
+                    </div>
                     <p>
-                        Prénom : <input type="text" id="prenom" name="prenom" />
+                        <label class="form-label" for="prenom">Prénom : </label><input class="form-control" type="text" id="prenom" name="prenom" aria-describedby="info-prenom" />
                     </p>
-                    <input type="submit" id="submitForm" name="submitForm" value="Envoyer">
+                    <div class="info-form alert alert-info hidden" id="info-prenom">
+                        Veuillez écrire Votre prénom usuel, ce champ est obligatoire
+                    </div>
+                    <p>
+                        <label class="form-label" for="login">Login : </label><input class="form-control" type="text" id="login" name="login" aria-describedby="info-login" />
+                    </p>
+                    <div class="info-form alert alert-info hidden" id="info-login">
+                        Veuillez écrire Votre login, si champs est vide un login sera généré automatiquement à partie de vos nom et prénom
+                    </div>
+                    <textarea class="form-control mb-2" id="bio" name="bio" aria-describedby="info-bio"></textarea>
+                    <div class="info-form alert alert-info hidden" id="info-bio">
+                        Veuillez parlez de vous, ce qui vous plaît, etc. Ce champ n'est pas obligatoire
+                    </div>
+                    <button class="btn btn-outline-success btn-sm" type="submit" id="submitForm" name="submitForm" value="Envoyer">Envoyer</button>
+                    <button class="btn btn-outline-warning btn-sm" type="reset">Effacer le formulaire</button>
+                    <button class="btn btn-outline-secondary btn-sm" type="button" id="test">Test</button>
                 </form>
             </article>
             <article class="col-lg-6 my-3">
@@ -218,6 +236,9 @@
             </article>
             <article>
                 <h2>Évènements sur la souris</h2>
+                <p class="alert alert-warning">
+                    Ces méthodes fonctionnent toujours mais ont été dépréciée depuis JQuery 3.3
+                </p>
                 <table>
                     <thead>
                         <tr>
@@ -263,6 +284,9 @@
             </article>
             <article>
                 <h3>Évènement au clavier</h3>
+                <p class="alert alert-warning">
+                    Ces méthodes fonctionnent toujours mais ont été dépréciée depuis JQuery 3.3
+                </p>
                 <table>
                     <thead>
                     <tr>
@@ -302,6 +326,9 @@
         <section class="row">
             <article>
                 <h3>Évènements sur les formulaires</h3>
+                <p class="alert alert-warning">
+                    Ces méthodes fonctionnent toujours mais ont été dépréciée depuis JQuery 3.3
+                </p>
                 <table cellpadding="0" cellspacing="0">
                     <thead>
                     <tr>
