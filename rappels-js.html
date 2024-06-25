@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+    
 <head>
+    <script>
+        console.log('début du chargement du DOM');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formation JQUERY - Rappels JS</title>
@@ -307,6 +310,9 @@
         /* comment réellement lancer une fonction anonyme sans l'assigner à une variable */
         /* 
         fonction auto-éxécutée 
+            forme de base 
+            ( callback function )(paramètres si besoin qui alimentent la callback function)
+
             (
                 function(a, b){
                     console.log(a + b);
@@ -320,11 +326,66 @@
             }
         )(12, 42);
  
+        console.log(document.children);
+
+        /* Manipulation du DOM */
+
+        /* attendre que tout le document soit chargé dans le navigateur pour agir sur les éléments HTML qui le compose */
+
+        /* addEventListener( événement surveillé, callback function a éxécuter quand l'événement survient ) */
+        window.addEventListener('DOMContentLoaded', function(){
+            console.log('le DOM est chargé');
+            const header = document.getElementById('pageHeader');
+            console.log(header);
+            header.addEventListener('click', function(evenement){
+                console.log(evenement);
+                console.log(header.innerText);
+            });
+
+            const headerSmall = document.querySelector('header#pageHeader small');
+            console.log(headerSmall);
+            headerSmall.addEventListener('click', function(evenement){
+                /*
+                si on clique sur l'élément small du header, on arrête la propagation du clic donc l'événement clic sur le header ne sera pas déclenché
+                */
+                evenement.stopPropagation();
+            });
+
+            /* clic sur un paragraphe possèdant la classe clickMe */
+            /* selecteur css pour un paragraphe avec la classe clickMe :  */
+            document.querySelector('p.clickMe').addEventListener('click', function(){
+                console.log('Le paragraphe avec la classe clickMe a été cliqué');
+            });
+
+            /* surveiller le clic sur le paragraphe avec l'id clickMe et afficher dans la console le texte qui se trouve à l'intérieur */
+            document.getElementById('clickMe').addEventListener('click', function(){
+                console.log(document.getElementById('clickMe').textContent);
+                document.getElementById('textContent').value = document.getElementById('clickMe').textContent;
+                console.log(document.getElementById('clickMe').innerText);
+                document.getElementById('innerText').value = document.getElementById('clickMe').innerText;
+            });
+
+            console.log( document.getElementsByTagName('P') );
+            const allP = document.querySelectorAll('p')
+            console.log( allP );
+            allP.forEach( function(p){
+                /*console.log(p.innerText);*/
+                p.addEventListener('mouseenter', function(){
+                    /*p.style.backgroundColor = '#ccc';*/
+                    p.style.setProperty('background-color', '#ccc');
+                })
+                
+                p.addEventListener('mouseleave', function(){
+                    p.style.removeProperty('background-color');
+                })
+            });
+        });
+
     </script>
 </head>
 
 <body>
-    <header class="bg-dark text-white py-2">
+    <header class="bg-dark text-white py-2" id="pageHeader">
         <div class="container">
             <h1>JQUERY <small>Formation DAWAN</small></h1>
         </div>
@@ -423,9 +484,13 @@
                     Ce paragraphe a un id clickMe, il va me permettre de surveiller ce
                     paragraphe en particulier, je vais surveille son clique.
                 </p>
+                <textarea style="width: 200px; height: 200px;" id="textContent"></textarea><br />
+                <textarea style="width: 200px; height: 200px;" id="innerText"></textarea>
             </article>
         </section>
     </main>
 </body>
-
+<script>
+    console.log('fin de chargement du DOM');
+</script>
 </html>
