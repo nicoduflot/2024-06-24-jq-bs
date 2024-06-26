@@ -135,6 +135,39 @@ jQuery(function($){
         list = list + '</ul>';
         return list;
     }
+    
+    function listeRecursiveJSON(entry, list = ''){
+        /* on parcours tous les éléments du tableau de json reçu */
+            list = list + '<ul>';
+            /*console.log('----');*/
+            for(key in entry){
+                /*console.log(key);*/
+                list = list + `<li><b>${key} :</b> `;
+                if( (typeof entry[key]) !== 'object' ){
+                    list = list + entry[key];
+                    /*console.log(entry[key]);*/
+                    if((typeof entry[key]) === 'undefined'){
+                        console.log(key, entry);
+                    }
+                }else{
+                    list = list + listeRecursiveJSON(entry[key]);
+                }
+                list = list + '</li>';
+            }
+            list = list + '</ul>';
+        return list;
+    }
+
+    function checkJson(data){
+        if(!data.length){
+            data = [data];
+        }
+        let html = '';
+        for(entry of data){
+            html = html + listeRecursiveJSON(entry);
+        }
+        return html;
+    }
 
     /* ajax avec jQuery */
     $('#showAllPosts').on('click', function(){
@@ -222,9 +255,26 @@ jQuery(function($){
             function(data){
                 /*console.log(data.children);*/
                 const content = data.children;
-                $('#showRss').html(listeRecursiveXML(content));
+                $('#showRss').html(checkJson(content));
             },
             'xml' /* le dataType xml */
+        ).fail(function(erreur){
+            console.log(erreur);
+        }).always(function(){
+            console.log('requête terminée');
+        })
+    });
+    
+    $('.GetJson').on('click', function(){
+        const url = $(this)[0].dataset.url;
+        $.get(
+            url,
+            function(data){
+                /*console.log(data.children);*/
+                
+                $('#showUsersList').html(listeRecursiveJSON(data));
+            },
+            'json' /* le dataType xml */
         ).fail(function(erreur){
             console.log(erreur);
         }).always(function(){
