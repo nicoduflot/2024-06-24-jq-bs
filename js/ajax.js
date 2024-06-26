@@ -27,7 +27,16 @@ jQuery(function($){
             console.log('-----------');
         });
         */
-    }).catch( 
+       return 'toto';
+    }).then(
+        function(message){
+            console.log(message);
+        }
+    ).then(
+        function(){
+            console.log('juré c\'est le dernier');
+        }
+    ).catch( 
         /* .catch() est appelé si et seulement si
         on a une réponse négative du serveur 
         quand on fait la requête 
@@ -185,7 +194,11 @@ jQuery(function($){
             (code du statut de la réponse est égal à 200 ) */
             function(reponse){
                 /*console.log(reponse);*/
-                $('#allPosts').html( jsonToPosts(reponse) );
+                $('#allPosts').html( jsonToPosts(reponse));
+            }
+        ).done(
+            function(){
+                console.log('One two one two this is just .. A .. Test');
             }
         ).fail(
             /* .fail() est appelé si et seulement si
