@@ -73,6 +73,68 @@ jQuery(function($){
 
     /* quand on clique sur #anim01Reset, on remet les blocs à leur apparence d'origine */
 
+    $('#anim01Reset').on('click', function(){
+
+        /* animer blocAnimate01 */
+        $('#blocAnimate01').animate(
+            /* prop css a changer */
+            {
+                width: '50px',
+                fontSize : ['1rem', 'linear']
+            },
+            /* vitesse de l'animation */
+            1000,
+            'swing',
+            function(){
+                console.log('blocAnimate01 a rétréci');
+            }
+        );
+        
+        /* animer blocAnimate02 */
+        $('#blocAnimate02').animate(
+            /* prop css a changer */
+            {
+                width: '50px',
+                fontSize : ['1rem', 'swing']
+            },
+            /* vitesse de l'animation */
+            1000,
+            'linear',
+            function(){
+                console.log('blocAnimate02 a rétréci');
+            }
+        );
+    });
+
+    $('#show01').on('click', function(){
+        /* on peut utliser les méthodes jquery */
+        /*$('#threeStates').show();*/
+        $('#threeStates').animate(
+            {
+                width: 'show'
+            }
+        );
+    });
     
+    $('#hide01').on('click', function(){
+        /* on peut utliser les méthodes jquery */
+        /*$('#threeStates').hide();*/
+        $('#threeStates').animate(
+            {
+                width: 'hide'
+            }
+        );
+    });
+    
+    $('#toggle01').on('click', function(){
+        /* on peut utliser les méthodes jquery */
+        /*$('#threeStates').toggle();*/
+        $('#threeStates').animate(
+            {
+                width: 'toggle'
+            }
+        );
+    });
+
 
 });

@@ -25,9 +25,8 @@
     <nav class="navbar bg-dark navbar-expand-md" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="./index.html">Accueil</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#nav-princ" aria-controls="nav-princ" aria-expanded="false"
-                aria-label="Active la navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-princ"
+                aria-controls="nav-princ" aria-expanded="false" aria-label="Active la navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nav-princ">
@@ -78,53 +77,52 @@
     </nav>
     <main class="container">
         <h2>JQuery & le CSS</h2>
-       <section class="row">
-           <article>
-               <h2>.css()</h2>
-               <p>
-                   Dans l'introduction, on a déjà vu quelques utilisation de .css()
-                   Elle permet entre autre de récupérer les valeurs css d'une propriété,
-                   de changer les valeurs css d'une propriété, et même des définir plusieurs 
-                   nouvelle propriétés CSS d'un élément d'un coup.
-               </p>
-           </article>
-       </section>
-       <section class="row">
-        <article class="col-lg-6 my-3">
-               <h2>Récupérer la valeur d'une propriété</h2>
-               <p id="getPropValue" style="color: darkblue;font-weight: bold;">
-                    en cliquant ici, je vais récupérer la valeur 
+        <section class="row">
+            <article>
+                <h2>.css()</h2>
+                <p>
+                    Dans l'introduction, on a déjà vu quelques utilisation de .css()
+                    Elle permet entre autre de récupérer les valeurs css d'une propriété,
+                    de changer les valeurs css d'une propriété, et même des définir plusieurs
+                    nouvelle propriétés CSS d'un élément d'un coup.
+                </p>
+            </article>
+        </section>
+        <section class="row">
+            <article class="col-lg-6 my-3">
+                <h2>Récupérer la valeur d'une propriété</h2>
+                <p id="getPropValue" style="color: darkblue;font-weight: bold;">
+                    en cliquant ici, je vais récupérer la valeur
                     de la propriété CSS color de ce paragraphe
                 </p>
                 <p id="resGetPropValue">
-                    
+
                 </p>
-           </article>
-           <article class="col-lg-6 my-3">
-               <h2>Changer la valeur d'une propriété</h2>
-               <p id="setPropValueRed">
-                   Mettre le lorem en rouge
-               </p>
-               <p id="setPropValueBlack">
+            </article>
+            <article class="col-lg-6 my-3">
+                <h2>Changer la valeur d'une propriété</h2>
+                <p id="setPropValueRed">
+                    Mettre le lorem en rouge
+                </p>
+                <p id="setPropValueBlack">
                     Mettre le lorem en noir
                 </p>
-                <p id="resSetPropValue" 
-                    style="color: blue; font-weight: bold;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Atque vero minus ipsam earum quod error ad aperiam, nisi 
-                    labore nulla quos possimus quasi? Necessitatibus 
+                <p id="resSetPropValue" style="color: blue; font-weight: bold;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Atque vero minus ipsam earum quod error ad aperiam, nisi
+                    labore nulla quos possimus quasi? Necessitatibus
                     consectetur ratione perferendis tenetur voluptatibus qui.
                 </p>
-           </article>
-       </section>
-       <h2>Animer les éléments</h2>
-       <section>
-            <article>
+            </article>
+        </section>
+        <section class="row">
+            <h2>Animer les éléments</h2>
+            <article class="col-lg-6 my-3">
                 <h2>.animate()</h2>
                 <p>
-                    .animate() change les propriétés css en donnant la possibilité 
+                    .animate() change les propriétés css en donnant la possibilité
                     d'y adjoindre une animation.
-                    On lui donne en paramètres les propriétés qui changent 
+                    On lui donne en paramètres les propriétés qui changent
                     (sous forme d'objets litéraux)
                 </p>
                 <p>
@@ -159,10 +157,10 @@
                     Reset l'état des bloc
                 </p>
             </article>
-            <article>
-                <h2>.show()  .hide() .toggle()</h2>
+            <article class="col-lg-6 my-3">
+                <h2>.show() .hide() .toggle()</h2>
                 <p>
-                    Ces trois fonction sont des raccourcis pour changer 
+                    Ces trois fonction sont des raccourcis pour changer
                     l'état d'affichage d'un élément
                 </p>
                 <p>
@@ -172,7 +170,7 @@
                 </p>
                 <div id="threeStates" class="threeStates"></div>
             </article>
-       </section>
+        </section>
     </main>
 </body>
 

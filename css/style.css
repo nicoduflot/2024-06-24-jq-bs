@@ -13,3 +13,11 @@
     background-color: crimson;
     margin: 2px;
 }
+
+.threeStates{
+    width: 250px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: crimson;
+    margin: 2px;
+}
