@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation JQUERY - Rappels JS</title>
+    <!--
+    Ajout des fichiers JS et CSS pour Bootstrap (et JQuery)
+    -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/popper.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/ajax.js"></script>
+</head>
+
+<body>
+    <header class="bg-dark text-white py-2">
+        <div class="container">
+            <h1>JQUERY <small>Formation DAWAN</small></h1>
+        </div>
+    </header>
+    <nav class="navbar bg-dark navbar-expand-md" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Accueil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-princ"
+                aria-controls="nav-princ" aria-expanded="false" aria-label="Active la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-princ">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./rappels-js.html">Rappels JS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Introduction JQuery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./jquerycss.html">JQuery & CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ajax.html">JQuery Ajax</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link goBottom" href="#">Bas de page</a>
+                    </li>
+                    <!--
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                    -->
+                </ul>
+                <!--
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                -->
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <h2>Ajax</h2>
+        <section class="row my-3">
+            <article class="col-lg-12 my-3">
+                <h3>Ajax avec Javascript</h3>
+                <h4>Avant la méthode fetch ES6</h4>
+                <p>
+                    Pour utiliser ajax avec js, sans regarder du côté des fonctions 
+                    type fetch, il faut instancier une objet de type XmlHttpRequest (XHR). 
+                    En code ça donnait
+                </p>
+                <pre>
+var xhr = null;
+// vérification du navigateur : supporte-t'il ajax
+if(window.XMLHttpRequest || window.ActiveXObject){
+    //le navigateur supporte ajax
+    if(window.ActiveXObject){
+        //navigateur microsoft type ie
+        try{
+            xhr = new ActiveXobject("Msxml2.XMLHTTP");
+        }catch(e){
+            xhr = new ActiveXobject("Microsoft.XMLHTTP");
+        }
+    }else{
+        //pas IE
+        xhr = new XmlHttpRequest();
+    }
+}else{
+    //pas d'ajax
+    alert("votre navigateur ne supporte pas l'objet XMLHttpRequest");
+    return;
+}
+                </pre>
+                <p>
+                    Cette fonction est étudiée pour prendre en compte les divers navigateurs et 
+                    leurs compatibilité avec XHR
+                </p>
+                <h4>Avec fetch()</h4>
+                <pre>
+fetch('https://jsonplaceholder.typicode.com/users').then(
+    /*
+    .then() est appelé si et seulement si
+    on a une réponse positive du serveur 
+    quand on fait la requête 
+    (code du statut de la réponse est égal à 200 )
+    */
+    function(data){
+        return data.json()
+    }
+).then(function(json){
+    /* on exploite le json */
+}).catch( 
+    /* .catch() est appelé si et seulement si
+    on a une réponse négative du serveur 
+    quand on fait la requête 
+    code du statut en erreur ressource (400, 401, etc) 
+    ou serveur (500, 501, etc) */
+    function(erreur){
+        /* on exploite le contenu de l'erreur */
+    }
+).finally(
+    /* s'éxécute quelque soit le code retour du serveur */
+    function(){
+        /* action(s) à faire à la fin de la requête */
+    }
+)
+                </pre>
+            </article>
+        </section>
+        <section class="row">
+            <article class="col-lg-6 my-3">
+                <h3>Ajax avec JQuery</h3>
+                <pre>
+jQuery( function($){
+    $.ajax();
+});
+                </pre>
+                <p>
+                    La fonction ajax() de JQuery contient les tests de compatibilité 
+                    pour instancier XHR
+                </p>
+                <p>
+                    Lors de ces appels, il faut utiliser des paramètres, tel l'url de la source, 
+                    la méthode (get pour récupérer les données, post pour en envoyer), etc.
+                </p>
+            </article>
+            <article class="col-lg-6 my-3">
+                <h2>Utiliser $.ajax()</h2>
+                <button class="btn btn-outline-secondary btn-sm" id="showAllPosts">
+                    Tous les posts
+                </button>
+                <div id="allPosts">
+                    
+                </div>
+            </article>
+            <article class="col-lg-6 my-3">
+                <h2>.get() et .post()</h2>
+                <p>
+                    Les fonctions .get() et .post() sont des raccourcis de $.ajax(), 
+                    elles utilisent donc soit GET ou POST.
+                    Elle recquiers des argument comme la fonction $.ajax()
+                </p>
+            </article>
+            <article class="col-lg-6 my-3">
+                <h2>Afficher les users avec .get()</h2>
+                <button id="showAllUsers">
+                    Tous les posts
+                </button>
+                <div class="table-responsive" id="allUsers">
+
+                </div>
+            </article>
+        </section>
+        <section class="row">
+            <article class="col-lg-12">
+                <h3>XML - RSS</h3>
+                <button id="GetRss">
+                    Get Rss
+                </button>
+                <div id="showRss">
+
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
