@@ -395,8 +395,8 @@
                     Le gestionnaire d'évènements permet de configurer 
                     sur une seul élément plusieurs écouteurs différents (click, bdclick, hover, etc.).
                 </p>
-                <textarea type="text" class="form-control evnt01 special">Gestion même comportement selon deux évènements différents</textarea>
-                <textarea type="text" type="text" class="form-control evnt02 special">Gestion par un gestionnaire d'évènements : un comportement différent par évènement.</textarea>
+                <textarea type="text" class="form-control evnt01 special my-3">Gestion même comportement selon deux évènements différents</textarea>
+                <textarea type="text" type="text" class="form-control evnt02 special my-3">Gestion par un gestionnaire d'évènements : un comportement différent par évènement.</textarea>
             </article>
             <article class="col-lg-6 my-3">
                 <h3>La délégation</h3>
@@ -417,7 +417,7 @@
                     <li>La fonction en retour liée à l'évènement</li>
                 </ul>
                 <p id="addSpan">
-                    
+
                 </p>
                 <table class="table table-dark" id="tableGenerate">
                     <thead>
@@ -434,7 +434,7 @@
         </section>
         <section class="row">
             <h2>Les espaces de noms</h2>
-            <article>
+            <article class="col-lg-6 my-3">
                 <h3>Définition</h3>
                 <p>
                     Permettent de désigner un évènement très précisément,
@@ -450,10 +450,10 @@
                     <li>namespace : la dénomination de l'espace de nom</li>
                 </ul>
                 <p class="special">
-                    <button id="nameSpace">Test du namespace</button>
+                    <button class="btn btn-outline-secondary btn-sm" id="nameSpace">Test du namespace</button>
                 </p>
             </article>
-            <article>
+            <article class="col-lg-6 my-3">
                 <h3>Utilité des namespace</h3>
                 <p>
                     Différentes fonctions peuvent 
@@ -482,7 +482,7 @@
                     trigger(".nom") <span class="commentaire">/* ne fonctionne pas */</span>
                 </code>
             </article>
-            <article>
+            <article class="my-3">
                 <h3>Supprimer les écouteurs d'évènements</h3>
                 <p>
                     La fonction inverse de .on() est .off() et 
@@ -494,9 +494,11 @@
                 <p>
                     Dans les arguments de .off() on peut préciser quel event on annule sur l'élément
                 </p>
-                <button id="annuleCptClick">Annuler le cptClick P</button> 
-                <button id="reactiveCptClick">réactive le le cptClick P</button> 
-                <button id="annuleClickBody">annule tous les event click body délégués</button> 
+                <div class="btn-group" role="group" aria-label="actions sur les écouteurs d'événement">
+                    <button class="btn btn-outline-secondary" id="annuleCptClick">Annuler le cptClick P</button> 
+                    <button class="btn btn-secondary" id="reactiveCptClick">réactive le le cptClick P</button> 
+                    <button class="btn btn-outline-dark" id="annuleClickBody">annule tous les event click body délégués</button> 
+                </div>
             </article>
         </section>
     </main>

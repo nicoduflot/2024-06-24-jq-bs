@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation JQUERY - Rappels JS</title>
+    <!--
+    Ajout des fichiers JS et CSS pour Bootstrap (et JQuery)
+    -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/popper.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jqcss.js"></script>
+</head>
+
+<body>
+    <header class="bg-dark text-white py-2">
+        <div class="container">
+            <h1>JQUERY <small>Formation DAWAN</small></h1>
+        </div>
+    </header>
+    <nav class="navbar bg-dark navbar-expand-md" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Accueil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#nav-princ" aria-controls="nav-princ" aria-expanded="false"
+                aria-label="Active la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-princ">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./rappels-js.html">Rappels JS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Introduction JQuery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./jquerycss.html">JQuery & CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ajax.html">JQuery Ajax</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link goBottom" href="#">Bas de page</a>
+                    </li>
+                    <!--
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                    -->
+                </ul>
+                <!--
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                -->
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <h2>JQuery & le CSS</h2>
+       <section>
+           <article>
+               <h2>.css()</h2>
+               <p>
+                   Dans l'introduction, on a déjà vu quelques utilisation de .css()
+                   Elle permet entre autre de récupérer les valeurs css d'une propriété,
+                   de changer les valeurs css d'une propriété, et même des définir plusieurs 
+                   nouvelle propriétés CSS d'un élément d'un coup.
+               </p>
+           </article>
+       </section>
+       <section>
+           <article>
+               <h2>Récupérer la valeur d'une propriété</h2>
+               <p id="getPropValue" style="color: darkblue;font-weight: bold;">
+                    en cliquant ici, je vais récupérer la valeur 
+                    de la propriété CSS color de ce paragraphe
+                </p>
+                <p id="resGetPropValue">
+                    
+                </p>
+           </article>
+           <article>
+               <h2>Changer la valeur d'une propriété</h2>
+               <p id="setPropValueRed">
+                   Mettre le lorem en rouge
+               </p>
+               <p id="setPropValueBlack">
+                    Mettre le lorem en noir
+                </p>
+                <p id="resSetPropValue" 
+                    style="color: darkblue; font-weight: bold;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Atque vero minus ipsam earum quod error ad aperiam, nisi 
+                    labore nulla quos possimus quasi? Necessitatibus 
+                    consectetur ratione perferendis tenetur voluptatibus qui.
+                </p>
+           </article>
+       </section>
+       <h2>Animer les éléments</h2>
+       <section>
+            <article>
+                <h2>.animate()</h2>
+                <p>
+                    .animate() change les propriétés css en donnant la possibilité 
+                    d'y adjoindre une animation.
+                    On lui donne en paramètres les propriétés qui changent 
+                    (sous forme d'objets litéraux)
+                </p>
+                <p>
+                    On peut agir sur la durée
+                </p>
+                <ul>
+                    <li>"slow" (600 milliseconde)</li>
+                    <li>"normal" (par défaut 400 millisecondes)</li>
+                    <li>"fast" (200 millisecondes)</li>
+                    <li>un durée choisie en millisecondes</li>
+                </ul>
+                <p>
+                    le type d'animation
+                </p>
+                <ul>
+                    <li>swing (par défaut) : de plus en plus vite puis ralentissemnt vers la fin</li>
+                    <li>linear : la même vitesse du début à la fin.</li>
+                </ul>
+                <p>
+                    une fonction a déclencher à la fin de l'animation : complete
+                </p>
+                <p id="animation01">
+                    Animez les blocs en dessous
+                </p>
+                <div id="blocAnimate01" class="blocAnimate">
+                    swing
+                </div>
+                <div id="blocAnimate02" class="blocAnimate">
+                    linear
+                </div>
+                <p id="anim01Reset">
+                    Reset l'état des bloc
+                </p>
+            </article>
+            <article>
+                <h2>.show()  .hide() .toggle()</h2>
+                <p>
+                    Ces trois fonction sont des raccourcis pour changer 
+                    l'état d'affichage d'un élément
+                </p>
+                <p>
+                    <button id="show01">show</button>&nbsp;&nbsp;
+                    <button id="hide01">hide</button>&nbsp;&nbsp;
+                    <button id="toggle01">toggle</button>
+                </p>
+                <div id="threeStates" class="threeStates"></div>
+            </article>
+       </section>
+    </main>
+</body>
+
+</html>
