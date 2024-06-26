@@ -217,5 +217,60 @@ jQuery(function($){
             console.log('curseur hors evnt02');
         }
     });
+
+    /*const span = document.createElement('span');*/
     
+    /*console.log(span);*/
+    /*span.on('click', function(){
+        console.log('clic sur le span');
+    });
+    */
+
+    /*$('p#addSpan').append(span);*/
+
+    const tr = $('<tr><td class="c01">C01</td><td class="c02">C02</td></tr>');
+
+    $('#tableGenerate tbody').append(tr);
+
+    /* sans délégation, il est impossible de surveiller le clic sur la td.c01 car elle n'a pas été ajoutée correctement dans le DOM */
+    /*
+    $('td.c01').on('clic', function(){
+        console.log('clic sur td.c01 sans délégation');
+    });
+    */
+
+    /* la délégation permet de surveiller le clic sur un élément parent enregistré correctement dans le DOM, on indique la cible du clic qui serait concerné par le clic action demandé */
+    $('#tableGenerate tbody').on('click', 'td.c01', function(){
+        console.log('clic sur td.c01');
+    });
+    
+    $('#nameSpace').on('click.nom', function(){
+        console.log('clic namespace nom');
+    });
+    
+    $('#nameSpace').on('click.prenom', function(){
+        console.log('clic namespace prenom');
+    });
+
+    $('#nameSpace').trigger('click.prenom');
+    $('#nameSpace').trigger('click.nom');
+
+    $('#annuleCptClick').on('click', function(){
+        $('p:not(.special)').off('click');
+    });
+    
+    $('#reactiveCptClick').on('click', function(){
+        $('p:not(.special)').on('click', function(){
+            cptClicP = cptClicP + 1;
+            console.log(`cptClicP : ${cptClicP}`);
+        });
+    });
+
+    $('body').on('click', 'p', function(){
+        console.log('clic sur un p du body');
+    });
+
+    $('#annuleClickBody').on('click', function(){
+        $('body').off('click', 'p');
+    });
 });
