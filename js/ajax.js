@@ -19,12 +19,14 @@ jQuery(function($){
         }
     ).then(function(json){
         /* on exploite le json */
-        /*console.log(json);*/
+        console.log(json);
+        /*
         json.forEach(function(element){
             console.log(element.name);
             console.log(element.email);
             console.log('-----------');
         });
+        */
     }).catch( 
         /* .catch() est appelé si et seulement si
         on a une réponse négative du serveur 
@@ -59,6 +61,41 @@ jQuery(function($){
         }
         return html;
     }
+    
+    function jsonToUsers(users){
+        let html = `
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Login</th>
+                    <th>Email</th>
+                    <th>Adresse</th>
+                </tr>
+            </thead>
+            <tbody>
+        `;
+        for(let user of users){
+            html = html + `
+            <tr>
+                <td>${user.name}</td>
+                <td>${user.username}</td>
+                <td>${user.email}</td>
+                <td>
+                    ${user.address.street}<br />
+                    ${user.address.suite}<br />
+                    ${user.address.city}<br />
+                    ${user.address.zipcode}
+                </td>
+            </tr>
+            `;
+        }
+        html = html + `
+            <tbody>
+        </table>
+        `;
+        return html;
+    }
 
     /* ajax avec jQuery */
     $('#showAllPosts').on('click', function(){
@@ -85,7 +122,35 @@ jQuery(function($){
             code du statut en erreur ressource (400, 401, etc) 
             ou erreur serveur (500, 501, etc) */
             function(erreur){
-                console.error(erreur);
+                console.log( `La requête s'est terminée sur une erreur : ${erreur.responseText}` );
+            }
+        ).always(
+            /* s'éxécute quelque soit le code retour du serveur */
+            function(){
+                console.log('requête terminée');
+            }
+        );
+    });
+
+    /* .get() : raccourcis de $.ajax() qui effectue directement la requête en get */
+    $('#showAllUsers').on('click', function(){
+        $.get(
+            'https://jsonplaceholder.typicode.com/users', /* url de la ressource */
+            function(data){
+                /* la fonction de rappel a executer équivalent au .done() */
+                /*console.log(data);*/
+                $('#allUsers').html( jsonToUsers(data) );
+            },
+            'json' /* le dataType */
+        ).fail(
+            /* .fail() est appelé si et seulement si
+            on a une réponse négative du serveur 
+            quand on fait la requête 
+            code du statut en erreur ressource (400, 401, etc) 
+            ou erreur serveur (500, 501, etc) */
+            function(erreur){
+                console.log( `La requête s'est terminée sur une erreur : ${erreur.responseText}` );
+                $('#allUsers').html( erreur.responseText );
             }
         ).always(
             /* s'éxécute quelque soit le code retour du serveur */
