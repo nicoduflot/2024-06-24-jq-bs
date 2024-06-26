@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0">
+  <channel>
+    <title>NYT &gt; Movies <small>Our reviews</small></title>
+    <link>https://www.nytimes.com/section/movies</link>
+    <atom:link href="https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml" rel="self" type="application/rss+xml"></atom:link>
+    <description></description>
+    <language>en-us</language>
+    <copyright>Copyright 2024 The New York Times Company</copyright>
+    <lastBuildDate>Wed, 26 Jun 2024 12:00:44 +0000</lastBuildDate>
+    <pubDate>Wed, 26 Jun 2024 09:02:49 +0000</pubDate>
+    <image>
+      <title>NYT &gt; Movies</title>
+      <url>https://static01.nyt.com/images/misc/NYT_logo_rss_250x40.png</url>
+      <link>https://www.nytimes.com/section/movies</link>
+    </image>
+    <item>
+      <title>Kevin Costner’s ‘Horizon’ Is Debuting Friday. Will Audiences Follow?</title>
+      <link>https://www.nytimes.com/2024/06/25/movies/kevin-costner-horizon-yellowstone.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/25/movies/kevin-costner-horizon-yellowstone.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/25/movies/kevin-costner-horizon-yellowstone.html" rel="standout"></atom:link>
+      <description>To make “Horizon,” he put his own money on the line and left “Yellowstone,” the series that revived his career — all with little Hollywood support.</description>
+      <dc:creator>Nicole Sperling</dc:creator>
+      <pubDate>Tue, 25 Jun 2024 09:01:06 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Actors and Actresses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Television</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Costner, Kevin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Horizon (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Yellowstone (TV Program)</category>
+    </item>
+    <item>
+      <title>‘White Chicks’ at 20: Comedy Beyond the Pale</title>
+      <link>https://www.nytimes.com/2024/06/25/movies/white-chicks-anniversary.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/25/movies/white-chicks-anniversary.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/25/movies/white-chicks-anniversary.html" rel="standout"></atom:link>
+      <description>The Wayans brothers’ subversive comedy is smarter than you remember.</description>
+      <dc:creator>Robert Daniels</dc:creator>
+      <pubDate>Tue, 25 Jun 2024 15:00:31 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">White Chicks (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Wayans, Keenen Ivory</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Wayans, Marlon</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Wayans, Shawn</category>
+      <media:content height="1000" medium="image" url="https://static01.nyt.com/images/2024/06/25/multimedia/25white-chicks-anniversary1-fcht/25white-chicks-anniversary1-fcht-mediumSquareAt3X.jpg" width="1000"></media:content>
+      <media:credit>Joe Lederer/Columbia Pictures</media:credit>
+      <media:description>Marlon Wayans and Shawn Wayans in “White Chicks.”</media:description>
+    </item>
+    <item>
+      <title>‘I Am: Celine Dion’ Review: You Saw the Best in Me</title>
+      <link>https://www.nytimes.com/2024/06/25/movies/i-am-celine-dion-review.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/25/movies/i-am-celine-dion-review.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/25/movies/i-am-celine-dion-review.html" rel="standout"></atom:link>
+      <description>Dion’s voice made her a star. A new documentary on Amazon Prime Video brings her back to Earth, showing her intimate struggles with stiff person syndrome.</description>
+      <dc:creator>Chris Azzopardi</dc:creator>
+      <pubDate>Tue, 25 Jun 2024 09:04:32 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Pop and Rock Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Dion, Celine</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Taylor, Irene (1970- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">I Am: Celine Dion (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Stiff Person Syndrome</category>
+    </item>
+    <item>
+      <title>‘The Lion King’ at 30: Jason Weaver Sang for Simba but Few Knew It</title>
+      <link>https://www.nytimes.com/2024/06/24/movies/lion-king-simba-jason-weaver.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/24/movies/lion-king-simba-jason-weaver.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/24/movies/lion-king-simba-jason-weaver.html" rel="standout"></atom:link>
+      <description>The actor was playing a young Michael Jackson when Elton John spotted him. Three decades later, the new attention to his legacy is “gratifying.”</description>
+      <dc:creator>Ashley Spencer</dc:creator>
+      <pubDate>Mon, 24 Jun 2024 21:38:34 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Animated Films</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Actors and Actresses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Television</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Lion King (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Weaver, Jason (1979- )</category>
+      <media:content height="1046" medium="image" url="https://static01.nyt.com/images/2024/06/26/arts/24simba-actor/24simba-actor-mediumSquareAt3X.jpg" width="1046"></media:content>
+      <media:credit>Randall Michelson &amp;amp; Bernardo Flores</media:credit>
+      <media:description>Jason Weaver, right, who brought Simba’s songs to life in the original “Lion King,” with Ernie Sabella, left, and Nathan Lane, the actors who voiced Pumbaa and Timon.</media:description>
+    </item>
+    <item>
+      <title>“Inside Out 2” Understands How Anxiety Effects Me</title>
+      <link>https://www.nytimes.com/2024/06/23/movies/inside-out-anxiety-adults.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/23/movies/inside-out-anxiety-adults.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/23/movies/inside-out-anxiety-adults.html" rel="standout"></atom:link>
+      <description>In a way that’s both cathartic and devastating, Pixar’s latest portrays how anxiety can take hold, our critic writes.</description>
+      <dc:creator>Maya Phillips</dc:creator>
+      <pubDate>Sun, 23 Jun 2024 09:01:52 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Anxiety and Stress</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Animated Films</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Pixar Animation Studios</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Inside Out 2 (Movie)</category>
+    </item>
+    <item>
+      <title>Jonathan Majors Is Cast in First Movie Role Since Assault Conviction</title>
+      <link>https://www.nytimes.com/2024/06/25/movies/jonathan-majors-merciless.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/25/movies/jonathan-majors-merciless.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/25/movies/jonathan-majors-merciless.html" rel="standout"></atom:link>
+      <description>Mr. Majors, who was sentenced to a year of domestic violence programming and was dropped by Marvel, is set to star in the independent thriller “Merciless.”</description>
+      <dc:creator>Reggie Ugwu</dc:creator>
+      <pubDate>Tue, 25 Jun 2024 19:37:05 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Majors, Jonathan (1989- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Domestic Violence</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Merciless (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Marvel Entertainment</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Actors and Actresses</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2024/06/25/multimedia/25majors-flbt/25majors-flbt-mediumSquareAt3X-v3.jpg" width="1800"></media:content>
+      <media:credit>Michael Tran/Agence France-Presse — Getty Images</media:credit>
+      <media:description>Jonathan Majors’s notable roles include “The Last Black Man in San Francisco,” “Creed III” and “Ant-Man and the Wasp: Quantumania.”</media:description>
+    </item>
+    <item>
+      <title>How Netflix’s Corporate Culture Has Changed</title>
+      <link>https://www.nytimes.com/2024/06/24/business/media/netflix-corporate-culture.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/24/business/media/netflix-corporate-culture.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/24/business/media/netflix-corporate-culture.html" rel="standout"></atom:link>
+      <description>The company’s latest internal memo about its corporate culture is more about how it expects employees to behave than what it wants to become.</description>
+      <dc:creator>Nicole Sperling</dc:creator>
+      <pubDate>Mon, 24 Jun 2024 09:01:52 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Netflix Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Hastings, Reed</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Sarandos, Ted</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Peters, Greg (Media Executive)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Workplace Environment</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Video Recordings, Downloads and Streaming</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2024/06/21/multimedia/21Netflix-Culture-jthw/21Netflix-Culture-jthw-mediumSquareAt3X-v2.jpg" width="1800"></media:content>
+      <media:credit>Philip Cheung for The New York Times</media:credit>
+      <media:description>The new memo highlights Netflix’s philosophy of “People Over Process” first: “We hire unusually responsible people who thrive on this openness and freedom.”</media:description>
+    </item>
+    <item>
+      <title>Russell Crowe’s in 2 Exorcism Films? Yes, and Here’s Why the Roles Work</title>
+      <link>https://www.nytimes.com/2024/06/23/movies/russell-crowe-exorcism-priest-movie.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/23/movies/russell-crowe-exorcism-priest-movie.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/23/movies/russell-crowe-exorcism-priest-movie.html" rel="standout"></atom:link>
+      <description>In a three-decade career, he’s developed an impressive range without forgetting how to have fun.</description>
+      <dc:creator>Beatrice Loayza</dc:creator>
+      <pubDate>Sun, 23 Jun 2024 09:01:45 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Actors and Actresses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Crowe, Russell</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">A Beautiful Mind (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Gladiator (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">L.A. Confidential (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Master and Commander: The Far Side of the World (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Exorcism (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Pope&#39;s Exorcist (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Unhinged (Movie)</category>
+    </item>
+    <item>
+      <title>It’s the Summer of Powell and Pressburger in New York</title>
+      <link>https://www.nytimes.com/2024/06/21/movies/powell-pressburger-moma.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/21/movies/powell-pressburger-moma.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/21/movies/powell-pressburger-moma.html" rel="standout"></atom:link>
+      <description>The British filmmaking team were maestros of Technicolor and so much more. If you don’t know their work, your favorite directors do.</description>
+      <dc:creator>Ben Kenigsberg</dc:creator>
+      <pubDate>Fri, 21 Jun 2024 16:15:10 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Powell, Michael (1905-90)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Museum of Modern Art</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Film Forum</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Pressburger, Emeric</category>
+    </item>
+    <item>
+      <title>Alec Baldwin’s Long Journey to Court After ‘Rust’ Shooting</title>
+      <link>https://www.nytimes.com/2024/06/26/magazine/what-to-know-alec-baldwin-rust-shooting.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/26/magazine/what-to-know-alec-baldwin-rust-shooting.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/26/magazine/what-to-know-alec-baldwin-rust-shooting.html" rel="standout"></atom:link>
+      <description>It’s been a challenge to follow the case. Here are its many twists and turns.</description>
+      <dc:creator>Jonathan Mahler</dc:creator>
+      <pubDate>Wed, 26 Jun 2024 09:02:49 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Suits and Litigation (Civil)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Baldwin, Alec</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Rust (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Carmack-Altwies, Mary</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">New Mexico</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Santa Fe (NM)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">CNN</category>
+    </item>
+    <item>
+      <title>Celine Dion Can Only Be Herself</title>
+      <link>https://www.nytimes.com/2024/06/26/arts/music/celine-dion-documentary.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/26/arts/music/celine-dion-documentary.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/26/arts/music/celine-dion-documentary.html" rel="standout"></atom:link>
+      <description>The singer’s over-the-top sincerity and expressiveness were once seen as irredeemably uncool. In the new documentary “I Am: Celine Dion,” they have become her superpowers.</description>
+      <dc:creator>Lindsay Zoladz</dc:creator>
+      <pubDate>Wed, 26 Jun 2024 09:02:48 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Stiff Person Syndrome</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Pop and Rock Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Content Type: Personal Profile</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Dion, Celine</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">I Am: Celine Dion (Movie)</category>
+      <media:content height="1799" medium="image" url="https://static01.nyt.com/images/2024/06/25/multimedia/25celine-notebook-bjqp/25celine-notebook-bjqp-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Andrew Kelly/Reuters</media:credit>
+      <media:description>Since her emergence as a Québécois child star, something about Celine Dion’s essential nature has remained constant, impervious to both changing trends and scathing critique.</media:description>
+    </item>
+    <item>
+      <title>The Long, Strange Road to Alec Baldwin’s Manslaughter Trial</title>
+      <link>https://www.nytimes.com/2024/06/26/magazine/alec-baldwin-new-mexico-trial.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/26/magazine/alec-baldwin-new-mexico-trial.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/26/magazine/alec-baldwin-new-mexico-trial.html" rel="standout"></atom:link>
+      <description>After an accidental on-set shooting death — and two years of bitter legal combat — the movie star is about to have his day in court.</description>
+      <dc:creator>Jonathan Mahler</dc:creator>
+      <pubDate>Wed, 26 Jun 2024 09:02:38 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Baldwin, Alec</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Rust (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Suits and Litigation (Civil)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">State Legislatures</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Actors and Actresses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Carmack-Altwies, Mary</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Gutierrez-Reed, Hannah</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Morrissey, Kari T</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Politics and Government</category>
+    </item>
+    <item>
+      <title>Kino Film Collection, a Streaming Alternative to Netflix and Hulu</title>
+      <link>https://www.nytimes.com/2024/06/26/movies/kino-film-collection-streaming.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/26/movies/kino-film-collection-streaming.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/26/movies/kino-film-collection-streaming.html" rel="standout"></atom:link>
+      <description>The service is an art house answer to what’s missing on some of the more popular streamers.</description>
+      <dc:creator>Jason Bailey</dc:creator>
+      <pubDate>Wed, 26 Jun 2024 09:02:03 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Goodbye, Dragon Inn (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Raft (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Conformist (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">France (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Variety (Movie)</category>
+    </item>
+    <item>
+      <title>‘I Am: Celine Dion’ Director Talks About Capturing the Star’s Seizure</title>
+      <link>https://www.nytimes.com/2024/06/25/movies/celine-dion-documentary-seizure-stiff-person-syndrome.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/25/movies/celine-dion-documentary-seizure-stiff-person-syndrome.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/25/movies/celine-dion-documentary-seizure-stiff-person-syndrome.html" rel="standout"></atom:link>
+      <description>Irene Taylor, director of the new documentary “I Am: Celine Dion,” talks about the decision to include a grueling scene of the pop star in crisis.</description>
+      <dc:creator>Annie Aguiar</dc:creator>
+      <pubDate>Tue, 25 Jun 2024 20:20:45 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Stiff Person Syndrome</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Music</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Dion, Celine</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Content Type: Personal Profile</category>
+    </item>
+    <item>
+      <title>Film Academy Chief Gets a Sequel: Bill Kramer’s Contract Is Renewed</title>
+      <link>https://www.nytimes.com/2024/06/24/movies/academy-of-motion-picture-arts-and-sciences-bill-kramer.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/24/movies/academy-of-motion-picture-arts-and-sciences-bill-kramer.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/24/movies/academy-of-motion-picture-arts-and-sciences-bill-kramer.html" rel="standout"></atom:link>
+      <description>Amid challenges in Hollywood, the Academy of Motion Picture Arts and Sciences renewed its chief executive’s contract a year early.</description>
+      <dc:creator>Robin Pogrebin</dc:creator>
+      <pubDate>Mon, 24 Jun 2024 18:05:54 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Academy Awards (Oscars)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Museums</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Academy Museum of Motion Pictures</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Academy of Motion Picture Arts and Sciences</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Kramer, Bill (Museum Executive)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Los Angeles (Calif)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Finances</category>
+    </item>
+    <item>
+      <title>Kevin Costner Will Not Return to ‘Yellowstone’</title>
+      <link>https://www.nytimes.com/2024/06/21/arts/television/yellowstone-kevin-costner-leaving.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/21/arts/television/yellowstone-kevin-costner-leaving.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/21/arts/television/yellowstone-kevin-costner-leaving.html" rel="standout"></atom:link>
+      <description>The actor and director is turning his attention to his ambitious film series about post-Civil War America.</description>
+      <dc:creator>Maya Salam</dc:creator>
+      <pubDate>Fri, 21 Jun 2024 23:27:42 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Television</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Actors and Actresses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Paramount Network</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Costner, Kevin</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Sheridan, Taylor (1970- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Yellowstone (TV Program)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Horizon: An American Saga (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Content Type: Personal Profile</category>
+      <media:content height="1600" medium="image" url="https://static01.nyt.com/images/2024/06/24/multimedia/21yellowstone-costner-kchb/21yellowstone-costner-kchb-mediumSquareAt3X.jpg" width="1600"></media:content>
+      <media:credit>Paramount Network</media:credit>
+      <media:description>“I just realized that I’m not going to be able to continue Season Five B or into the future,” Kevin Costner said about his participation in the final episodes of “Yellowstone.”</media:description>
+    </item>
+    <item>
+      <title>15 Donald Sutherland Movies to Stream: ‘Hunger Games,’ ‘M*A*S*H’ and More</title>
+      <link>https://www.nytimes.com/2024/06/21/movies/donald-sutherland-streaming.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/21/movies/donald-sutherland-streaming.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/21/movies/donald-sutherland-streaming.html" rel="standout"></atom:link>
+      <description>Whether in the lead or a supporting role, the actor’s immense talent and range were apparent in six decades of performances.</description>
+      <dc:creator>Scott Tobias</dc:creator>
+      <pubDate>Fri, 21 Jun 2024 15:37:25 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Actors and Actresses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Sutherland, Donald</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Animal House (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Don&#39;t Look Now (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Invasion of the Body Snatchers (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">JFK (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Klute (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Ordinary People (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Pride and Prejudice (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Six Degrees of Separation (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Space Cowboys (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Day of the Locust (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Great Train Robbery (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Hunger Games (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Without Limits (Movie)</category>
+      <media:content height="1080" medium="image" url="https://static01.nyt.com/images/2024/06/21/arts/21sutherland-streaming/21sutherland-streaming-mediumSquareAt3X.jpg" width="1080"></media:content>
+      <media:credit>20th Century Fox</media:credit>
+      <media:description>Donald Sutherland delivered sarcasm and soul in “M*A*S*H.” </media:description>
+    </item>
+    <item>
+      <title>Five Horror Movies to Stream Now</title>
+      <link>https://www.nytimes.com/2024/06/21/movies/five-horror-movies-to-stream-now.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/21/movies/five-horror-movies-to-stream-now.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/21/movies/five-horror-movies-to-stream-now.html" rel="standout"></atom:link>
+      <description>This month’s picks include demon baby, a cursed chef and all kinds of people trapped in hellish situations.</description>
+      <dc:creator>Erik Piepenburg</dc:creator>
+      <pubDate>Mon, 24 Jun 2024 20:07:36 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Hulu.com</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Netflix Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org">Tubi Inc</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Monster (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The First Omen (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Property (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">What You Wish For (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Life of Belle (Movie)</category>
+    </item>
+    <item>
+      <title>Conan O’Brien Doesn’t Matter</title>
+      <link>https://www.nytimes.com/2024/06/21/arts/television/conan-obrien.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/21/arts/television/conan-obrien.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/21/arts/television/conan-obrien.html" rel="standout"></atom:link>
+      <description>*That’s his opinion. And yet he’s setting a new standard for what life after late-night can look like. (Hint: It’s a lot like what he did on talk shows.)</description>
+      <dc:creator>Jason Zinoman</dc:creator>
+      <pubDate>Tue, 25 Jun 2024 18:16:03 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Comedy and Humor</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Television</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Content Type: Personal Profile</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">O&#39;Brien, Conan</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Conan O&#39;Brien Needs a Friend (Radio Program)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Hot Ones (Web-Original Program)</category>
+      <media:content height="1800" medium="image" url="https://static01.nyt.com/images/2024/06/23/multimedia/23conan-mjhl/23conan-mjhl-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Adali Schell for The New York Times</media:credit>
+      <media:description>Stephen Colbert said O’Brien expanded the limits of silliness in late-night. He’s “all rubber chicken, no knife,” Colbert said.</media:description>
+    </item>
+    <item>
+      <title>7 New Movies Our Critics Are Talking About This Week</title>
+      <link>https://www.nytimes.com/2024/06/21/movies/new-movies-this-week-critics.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/21/movies/new-movies-this-week-critics.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/21/movies/new-movies-this-week-critics.html" rel="standout"></atom:link>
+      <description>Whether you’re a casual moviegoer or an avid buff, our reviewers think these films are worth knowing about.</description>
+      <dc:creator>The New York Times</dc:creator>
+      <pubDate>Fri, 21 Jun 2024 09:03:31 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Green Border (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Janet Planet (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Kinds of Kindness (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Bikeriders (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Devil&#39;s Bath (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Thelma (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Exorcism (Movie)</category>
+    </item>
+    <item>
+      <title>A Universe of Inspirations Swirls Within ‘Janet Planet’</title>
+      <link>https://www.nytimes.com/2024/06/21/movies/janet-planet-baker-inspirations.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/21/movies/janet-planet-baker-inspirations.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/21/movies/janet-planet-baker-inspirations.html" rel="standout"></atom:link>
+      <description>The playwright Annie Baker shares the artistic influences behind her feature film debut.</description>
+      <dc:creator>Robert Ito</dc:creator>
+      <pubDate>Fri, 21 Jun 2024 09:02:59 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Theater</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Baker, Annie</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Janet Planet (Movie)</category>
+    </item>
+    <item>
+      <title>‘Copa 71’ Documentary Shows Hidden History of Women’s World Cup</title>
+      <link>https://www.nytimes.com/2024/06/21/movies/copa-71-womens-world-cup.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/21/movies/copa-71-womens-world-cup.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/21/movies/copa-71-womens-world-cup.html" rel="standout"></atom:link>
+      <description>This new documentary unearths footage from a World Cup event that even veteran players didn’t know about. It’s both exhilarating and infuriating.</description>
+      <dc:creator>Alissa Wilkinson</dc:creator>
+      <pubDate>Fri, 21 Jun 2024 09:01:51 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Soccer</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Women&#39;s World Cup (Soccer)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Copa 71 (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Erskine, James (Filmmaker)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ramsay, Rachel (Filmmaker)</category>
+    </item>
+    <item>
+      <title>Donald Sutherland Didn’t Disappear Into Roles, and That Was a Good Thing</title>
+      <link>https://www.nytimes.com/2024/06/20/movies/donald-sutherland-movies.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/20/movies/donald-sutherland-movies.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/20/movies/donald-sutherland-movies.html" rel="standout"></atom:link>
+      <description>The actor understood the range of human feeling, but he came of age when movies distrusted institutions, and that suspicion was part of his arsenal.</description>
+      <dc:creator>Alissa Wilkinson</dc:creator>
+      <pubDate>Thu, 20 Jun 2024 20:18:38 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Actors and Actresses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Sutherland, Donald</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Pride &amp; Prejudice (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Hunger Games (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Content Type: Personal Profile</category>
+    </item>
+    <item>
+      <title>Donald Sutherland, a Chameleon of a Movie Star, Dies at 88</title>
+      <link>https://www.nytimes.com/2024/06/20/movies/donald-sutherland-dead.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/20/movies/donald-sutherland-dead.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/20/movies/donald-sutherland-dead.html" rel="standout"></atom:link>
+      <description>In a wide-ranging career (from “M*A*S*H” to “Ordinary People” to “The Hunger Games”), he could be endearing in one role, menacing in another and just plain odd in a third.</description>
+      <dc:creator>Clyde Haberman</dc:creator>
+      <pubDate>Fri, 21 Jun 2024 21:40:49 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Sutherland, Donald</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Deaths (Obituaries)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Actors and Actresses</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">M*A*S*H* (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Don&#39;t Look Now (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Ordinary People (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Klute (Movie)</category>
+      <media:content height="1801" medium="image" url="https://static01.nyt.com/images/2024/06/21/multimedia/00Sutherland1-hmpc-print1/00Sutherland1-hmpc-mediumSquareAt3X.jpg" width="1800"></media:content>
+      <media:credit>Jack Robinson/Hulton Archive, via Getty Images</media:credit>
+      <media:description>Donald Sutherland in a 1970 publicity photo. He said he was once rejected for a film role by a producer who said: “This part calls for a guy-next-door type. You don’t look like you’ve lived next door to anyone.”</media:description>
+    </item>
+    <item>
+      <title>‘Green Border’ Review: Migrants’ Elusive Race for Freedom</title>
+      <link>https://www.nytimes.com/2024/06/20/movies/green-border-review.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/20/movies/green-border-review.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/20/movies/green-border-review.html" rel="standout"></atom:link>
+      <description>Agnieszka Holland focuses on the Polish-Belarusian border as a Syrian family tries to make it to the European Union.</description>
+      <dc:creator>Manohla Dargis</dc:creator>
+      <pubDate>Thu, 20 Jun 2024 17:06:32 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Green Border (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Holland, Agnieszka</category>
+    </item>
+    <item>
+      <title>‘Federer: Twelve Final Days’ Review: Roger, Over and Out</title>
+      <link>https://www.nytimes.com/2024/06/20/movies/roger-federer-twelve-final-days-review.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/20/movies/roger-federer-twelve-final-days-review.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/20/movies/roger-federer-twelve-final-days-review.html" rel="standout"></atom:link>
+      <description>A new documentary follows the Swiss tennis star from his 2022 retirement announcement to his final match.</description>
+      <dc:creator>Amy Nicholson</dc:creator>
+      <pubDate>Thu, 20 Jun 2024 11:00:06 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Tennis</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Content Type: Personal Profile</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Federer: Twelve Final Days (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Federer, Roger</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Kapadia, Asif</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Sabia, Joe (1983- )</category>
+    </item>
+    <item>
+      <title>‘Hummingbirds’ Review: Two Friends’ Summer Along the Border</title>
+      <link>https://www.nytimes.com/2024/06/20/movies/hummingbirds-review.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/20/movies/hummingbirds-review.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/20/movies/hummingbirds-review.html" rel="standout"></atom:link>
+      <description>The young directors Silvia Del Carmen Castaños and Estefanía (Beba) Contreras stargaze, watch fireworks and discuss their lives in this documentary filmed in Laredo, Texas.</description>
+      <dc:creator>Ben Kenigsberg</dc:creator>
+      <pubDate>Thu, 20 Jun 2024 11:00:06 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Documentary Films and Programs</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Immigration and Emigration</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Content Type: Personal Profile</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Hummingbirds (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Contreras, Estefania (Beba)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Del Carmen Castanos, Silvia</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Laredo (Tex)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Mexico</category>
+    </item>
+    <item>
+      <title>‘Thelma’ Review: Granny Get Your Gun</title>
+      <link>https://www.nytimes.com/2024/06/20/movies/thelma-review-june-squibb-action.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/20/movies/thelma-review-june-squibb-action.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/20/movies/thelma-review-june-squibb-action.html" rel="standout"></atom:link>
+      <description>The remarkable June Squibb plays a vengeful scam victim in this ludicrous action-movie spoof.</description>
+      <dc:creator>Jeannette Catsoulis</dc:creator>
+      <pubDate>Thu, 20 Jun 2024 09:01:39 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Squibb, June</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Roundtree, Richard</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Thelma (2024) (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Margolin, Josh (Film Director)</category>
+      <media:content height="858" medium="image" url="https://static01.nyt.com/images/2024/06/21/multimedia/20thelma-review-pix-ktlq/20thelma-review-pix-ktlq-mediumSquareAt3X.jpg" width="858"></media:content>
+      <media:credit>Magnolia Pictures, via Associated Press</media:credit>
+      <media:description>From left, June Squibb in the title role and Fred Hechinger as her grandson in a scene from the film “Thelma.”</media:description>
+    </item>
+    <item>
+      <title>‘The Devil’s Bath’ Review: Madwoman in the Cottage</title>
+      <link>https://www.nytimes.com/2024/06/20/movies/the-devils-bath-review-madwoman-in-the-cottage.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/20/movies/the-devils-bath-review-madwoman-in-the-cottage.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/20/movies/the-devils-bath-review-madwoman-in-the-cottage.html" rel="standout"></atom:link>
+      <description>This stark psychological horror movie tracks the mental deterioration of an 18th-century peasant woman.</description>
+      <dc:creator>Beatrice Loayza</dc:creator>
+      <pubDate>Thu, 20 Jun 2024 09:01:01 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Fiala, Severin (1985- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Franz, Veronika (1965- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Devil&#39;s Bath (Movie)</category>
+    </item>
+    <item>
+      <title>‘Kinds of Kindness’ Review: Everybody’s Looking for Something</title>
+      <link>https://www.nytimes.com/2024/06/20/movies/kinds-of-kindness-review.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/20/movies/kinds-of-kindness-review.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/20/movies/kinds-of-kindness-review.html" rel="standout"></atom:link>
+      <description>Yorgos Lanthimos returns with a twisted fable triptych about dominating and being dominated.</description>
+      <dc:creator>Alissa Wilkinson</dc:creator>
+      <pubDate>Thu, 20 Jun 2024 19:55:53 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Lanthimos, Yorgos</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Plemons, Jesse (1988- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Stone, Emma</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Kinds of Kindness (Movie)</category>
+    </item>
+    <item>
+      <title>‘The Exorcism’ Review: Losing Faith</title>
+      <link>https://www.nytimes.com/2024/06/20/movies/the-exorcism-review.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/20/movies/the-exorcism-review.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/20/movies/the-exorcism-review.html" rel="standout"></atom:link>
+      <description>Russell Crowe stars as an actor playing an exorcist who’s battling his own demons.</description>
+      <dc:creator>Alissa Wilkinson</dc:creator>
+      <pubDate>Thu, 20 Jun 2024 09:00:51 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Crowe, Russell</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Exorcism (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Miller, Joshua John</category>
+    </item>
+    <item>
+      <title>‘Janet Planet’ Review: A Sticky Summer Full of Small Dramas</title>
+      <link>https://www.nytimes.com/2024/06/20/movies/janet-planet-review.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/20/movies/janet-planet-review.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/20/movies/janet-planet-review.html" rel="standout"></atom:link>
+      <description>Annie Baker’s debut feature film is a tiny masterpiece — a perfect coming-of-age story for both a misfit tween and her mother.</description>
+      <dc:creator>Alissa Wilkinson</dc:creator>
+      <pubDate>Thu, 20 Jun 2024 09:00:50 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Janet Planet (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Baker, Annie</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Nicholson, Julianne</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Ziegler, Zoe</category>
+    </item>
+    <item>
+      <title>‘The Bikeriders’ Review: On the Road to Nowhere, Beautifully</title>
+      <link>https://www.nytimes.com/2024/06/20/movies/the-bikeriders-review-austin-butler.html</link>
+      <guid isPermaLink="true">https://www.nytimes.com/2024/06/20/movies/the-bikeriders-review-austin-butler.html</guid>
+      <atom:link href="https://www.nytimes.com/2024/06/20/movies/the-bikeriders-review-austin-butler.html" rel="standout"></atom:link>
+      <description>Austin Butler, Jodie Comer and Tom Hardy star in a romanticized drama about a fictional motorcycle club in the 1960s.</description>
+      <dc:creator>Manohla Dargis</dc:creator>
+      <pubDate>Thu, 20 Jun 2024 19:09:52 +0000</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Movies</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">The Bikeriders (Movie)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Nichols, Jeff (1978- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Butler, Austin (1991- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Comer, Jodie (1993- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Hardy, Tom (1977- )</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Shannon, Michael</category>
+    </item>
+  </channel>
+</rss>

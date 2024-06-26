@@ -63,6 +63,9 @@ jQuery(function($){
     }
     
     function jsonToUsers(users){
+        if(!users.length){
+            users = [users];
+        }
         let html = `
         <table class="table table-dark table-striped">
             <thead>
@@ -77,7 +80,7 @@ jQuery(function($){
         `;
         for(let user of users){
             html = html + `
-            <tr>
+            <tr data-userid="${user.id}">
                 <td>${user.name}</td>
                 <td>${user.username}</td>
                 <td>${user.email}</td>
@@ -95,6 +98,42 @@ jQuery(function($){
         </table>
         `;
         return html;
+    }
+
+    function listeRecursiveXML(xmlElements, list = ''){
+        list = '<ul>';
+
+        /* on parcour tous les éléments de la collection HTML envoyé en paramètre par l'appel de la fonction */
+        let listAttr = '';
+        for(element of xmlElements){
+            listAttr = '';
+            if(element.attributes.length > 0){
+                listAttr = listAttr + '<ul>';
+                for(attr of element.attributes){
+                    listAttr = listAttr + `<li>attr <b>${attr['name']}</b> : ${attr['value']}</li>`;
+                }
+                listAttr = listAttr + '</ul>';
+            }
+            if(element.children.length !== 0){
+                /* si l'élément à des éléments enfants */
+                /*console.log(element.nodeName);*/
+                list = list + `<li><b>${element.nodeName} : </b><br />`;
+                list = list + `${element.firstChild.textContent}`;
+                list = list + listAttr;
+                list = list + listeRecursiveXML(element.children);
+                list = list + '</li>';
+            }else{
+                /* si l'élément n'a pas d'enfants */
+                /*console.log(element.nodeName);*/
+                list = list + `<li><b>${element.nodeName} : </b>
+                ${listAttr}
+                ${element.innerHTML}
+                </li>`;
+            }
+        }
+
+        list = list + '</ul>';
+        return list;
     }
 
     /* ajax avec jQuery */
@@ -132,14 +171,25 @@ jQuery(function($){
         );
     });
 
+    $('.backButton').hide();
     /* .get() : raccourcis de $.ajax() qui effectue directement la requête en get */
+    const baseUrlUser = 'https://jsonplaceholder.typicode.com/users';
+    let urluser = baseUrlUser;
     $('#showAllUsers').on('click', function(){
         $.get(
-            'https://jsonplaceholder.typicode.com/users', /* url de la ressource */
+            urluser, /* url de la ressource */
             function(data){
                 /* la fonction de rappel a executer équivalent au .done() */
                 /*console.log(data);*/
                 $('#allUsers').html( jsonToUsers(data) );
+                /* on va abonner par délégation les tr créées à un écouteur d'événement */
+                $('#allUsers').on('click', 'tbody tr', function(){
+                    console.log($(this)[0].dataset.userid);
+                    urluser = urluser + `/${$(this)[0].dataset.userid}`;
+                    $('#showAllUsers').trigger('click');
+                    urluser = baseUrlUser;
+                    $('.backButton').show();
+                });
             },
             'json' /* le dataType */
         ).fail(
@@ -159,4 +209,27 @@ jQuery(function($){
             }
         );
     });
+
+    $('.backButton').on('click', function(){
+        $('#showAllUsers').trigger('click');
+        $('.backButton').hide();
+    });
+
+    $('.GetRss').on('click', function(){
+        const url = $(this)[0].dataset.url;
+        $.get(
+            url,
+            function(data){
+                /*console.log(data.children);*/
+                const content = data.children;
+                $('#showRss').html(listeRecursiveXML(content));
+            },
+            'xml' /* le dataType xml */
+        ).fail(function(erreur){
+            console.log(erreur);
+        }).always(function(){
+            console.log('requête terminée');
+        })
+    });
+
 })
