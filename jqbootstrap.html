@@ -84,7 +84,8 @@
             <article class="col-lg-6 my-3">
                 <h3>Nav & tab dynamique</h3>
                 <p>
-                    Certains composants de bootstrap sont "livrés" sans automatisme Jacvascripts ou JQuery, il faut développer soit-même les interactions
+                    Certains composants de bootstrap sont "livrés" sans automatisme Jacvascripts ou JQuery, il faut
+                    développer soit-même les interactions
                 </p>
                 <p>
                     Le code suivant est fait pour une implantation unique des tabs
@@ -181,7 +182,11 @@ $('#favoriteTeenAgeAlbum a').on('click', function(event){
             <article class="col-lg-6 my-3">
                 <h3>Factorisation d'un script</h3>
                 <p>
-                    Si on veut pourvoir réutiliser le script précédent sans avoir à "copier - coller" et modifier seulement le code au niveau des id des éléments, il faut modifier la structure html et factoriser le code en récupérérant l'id de l'élément ancètre le plus proche correspondant à la classe de notre widget (web gadjet) et seulement l'id du doit doit être modifié pour qu'on ai les comportements demandés
+                    Si on veut pourvoir réutiliser le script précédent sans avoir à "copier - coller" et modifier
+                    seulement le code au niveau des id des éléments, il faut modifier la structure html et factoriser le
+                    code en récupérérant l'id de l'élément ancètre le plus proche correspondant à la classe de notre
+                    widget (web gadjet) et seulement l'id du doit doit être modifié pour qu'on ai les comportements
+                    demandés
                 </p>
                 <code>
                     <pre>
@@ -277,9 +282,11 @@ $('.favoriteContent li a').on('click', function(event){
                         <div id="albums" class="hidden m-1">
                             <h4>Albums</h4>
                             <ul>
-                                <li>Live at Grüner Salon (2014, CD autoproduits vendus lors des concerts39, la version mp3 est toujours disponible sur son site)</li>
+                                <li>Live at Grüner Salon (2014, CD autoproduits vendus lors des concerts39, la version
+                                    mp3 est toujours disponible sur son site)</li>
                                 <li>Orbit (autoproduit en 2016; promu par exemple par Motor Music66)</li>
-                                <li>Paper Castles (autoproduit le 8 mars 2019, avec des services rachetés à Motor Music67,68,69)</li>
+                                <li>Paper Castles (autoproduit le 8 mars 2019, avec des services rachetés à Motor
+                                    Music67,68,69)</li>
                                 <li>Glow (autoproduit sorti le 19 mars 2021)70</li>
                             </ul>
                         </div>
@@ -289,7 +296,60 @@ $('.favoriteContent li a').on('click', function(event){
         </section>
         <section class="row">
             <article class="col-lg-6 my-3">
-
+                <h3>Les modales</h3>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button>
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th>Cover</th>
+                            <th>Année</th>
+                            <th>Album</th>
+                            <th>Groupe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="./images/albums/nirvana-nevermind-cover.jpg" class="img-thumbnail" width="200" /></td>
+                            <td></td>
+                            <td>Nevermind</td>
+                            <td>Nirvana</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/albums/alice-phoebe-lou-glow-cover.jpg" class="img-thumbnail" width="200" /></td>
+                            <td></td>
+                            <td>Glow</td>
+                            <td>Alice Phoebe Lou</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/albums/Angra_angels_cry.jpg" class="img-thumbnail" width="200" /></td>
+                            <td></td>
+                            <td>Angels cry</td>
+                            <td>Angra</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/albums/radiohead-the-bends-cover.jpg" class="img-thumbnail" width="200" /></td>
+                            <td></td>
+                            <td>The bends</td>
+                            <td>Radiohead</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/albums/florence-and-the-machine-dance-fever.jpg" class="img-thumbnail" width="200" /></td>
+                            <td></td>
+                            <td>Dance Fever</td>
+                            <td>Florence and the machine</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Cover</th>
+                            <th>Année</th>
+                            <th>Album</th>
+                            <th>Groupe</th>
+                        </tr>
+                    </tfoot>
+                </table>
             </article>
             <article class="col-lg-6 my-3">
 
@@ -309,6 +369,23 @@ $('.favoriteContent li a').on('click', function(event){
             &copy; DAWAN - 2024
         </div>
     </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
