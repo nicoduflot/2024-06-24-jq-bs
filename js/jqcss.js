@@ -1,9 +1,5 @@
 jQuery(function($){
-    $('a.goBottom').on('click', function(e){
-        e.preventDefault();
-        console.log($(document).height());
-        $('html, body').scrollTop( $(document).height() );
-    });
+    
 
     $('#getPropValue').on('click', function(){
         const resultat = `${$('#getPropValue').css('color')}, ${$('#getPropValue').css('fontWeight')}`;

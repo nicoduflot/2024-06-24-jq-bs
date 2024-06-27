@@ -1,11 +1,5 @@
 //après le chargement complet du DOM
 jQuery(function ($) {
-    $('a.goBottom').on('click', function(e){
-        e.preventDefault();
-        console.log($(document).height());
-        $('html, body').scrollTop( $(document).height() );
-    });
-
     $('.favoriteContent li a').on('click', function(event){
         /* on reprère le clique sur n'importe quel lien situé dans un élément ayant la classe favoriteContent */
         /* on annule le comportement par défaut d'un clic sur un lien */
@@ -30,4 +24,38 @@ jQuery(function ($) {
         });
         $(`#${parent} .content > div#${info}`).removeClass('hidden');
     });
+
+    /*
+    déclencher la modale quand on clique 
+    sur les tr du tbody du tableau .reactiveModal
+    table.reactiveModal tbody tr
+    */
+
+    $('table.reactiveModal tbody tr').on('click', function(){
+        const parent  = $(this).closest('.reactiveModal').attr('data-bs-target');
+        $(`button.reactiveModal[data-bs-target="${parent}"]`).trigger('click');
+        const modalTitle = $(this).closest('.reactiveModal').attr('data-modal-title');
+        $(`${parent} .modal-title`).html(modalTitle);
+        let modalSections = [];
+        let modalSectionsContent = [];
+        $(`[data-bs-target="${parent}"] thead tr th`).each(function(){
+            console.log($(this).html());
+            modalSections.push($(this).html());
+        });
+        console.log(modalSections);
+        console.log($(this)[0].children);
+        for(info of $(this)[0].children){
+            modalSectionsContent.push(info.innerHTML);
+        }
+        console.log(modalSectionsContent);
+        $(`${parent} .modal-body`).html('');
+        for(key in modalSections){
+            let sectionTitle = `<h3>${modalSections[key]}</h3>`;
+            let sectionContent = `<p>${modalSectionsContent[key]}</p>`;
+            $(`${parent} .modal-body`).append(sectionTitle);
+            $(`${parent} .modal-body`).append(sectionContent);
+
+        }
+    });
+
 });

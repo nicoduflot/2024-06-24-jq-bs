@@ -194,12 +194,6 @@ jQuery(function($){
         $('html, body').scrollTop(0);
     });
 
-    $('a.goBottom').on('click', function(e){
-        e.preventDefault();
-        console.log($(document).height());
-        $('html, body').scrollTop( $(document).height() );
-    });
-
     /* utiliser le gestionnaire d'événement : des actions similaires ou différentes selon des événements différents sur un même élément */
     
     $('.evnt01').on('focus dblclick', function(){

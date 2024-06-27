@@ -1,10 +1,4 @@
 jQuery(function($){
-    $('a.goBottom').on('click', function(e){
-        e.preventDefault();
-        console.log($(document).height());
-        $('html, body').scrollTop( $(document).height() );
-    });
-
     /* ajax js avec fetch */
 
     fetch('https://jsonplaceholder.typicode.com/users').then(

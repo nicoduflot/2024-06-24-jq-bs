@@ -13,6 +13,7 @@
     <script src="./js/jquery-3.7.1.js"></script>
     <script src="./js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scripts.js"></script>
     <script src="./js/jqbootstrap.js"></script>
 </head>
 
@@ -297,10 +298,10 @@ $('.favoriteContent li a').on('click', function(event){
         <section class="row">
             <article class="col-lg-6 my-3">
                 <h3>Les modales</h3>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Launch demo modal
+                <button type="button" class="btn btn-primary hidden reactiveModal" data-bs-toggle="modal" data-bs-target="#bandList">
+                    Voir le groupe
                 </button>
-                <table class="table table-dark table-striped reactiveModal">
+                <table class="table table-dark table-striped reactiveModal" data-bs-target="#bandList" data-modal-title="Mes groupes préférés">
                     <thead>
                         <tr>
                             <th>Cover</th>
@@ -311,32 +312,32 @@ $('.favoriteContent li a').on('click', function(event){
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="cover"><img src="./images/albums/nirvana-nevermind-cover.jpg" class="img-thumbnail" width="200" /></td>
-                            <td class="annee"></td>
-                            <td class="album">Nevermind</td>
-                            <td class="groupe">Nirvana</td>
+                            <td><img src="./images/albums/nirvana-nevermind-cover.jpg" class="img-thumbnail" width="200" /></td>
+                            <td>1992</td>
+                            <td>Nevermind</td>
+                            <td>Nirvana</td>
                         </tr>
                         <tr>
-                            <td class="cover"><img src="./images/albums/alice-phoebe-lou-glow-cover.jpg" class="img-thumbnail" width="200" /></td>
-                            <td class="annee"></td>
-                            <td class="album">Glow</td>
-                            <td class="groupe">Alice Phoebe Lou</td>
+                            <td><img src="./images/albums/alice-phoebe-lou-glow-cover.jpg" class="img-thumbnail" width="200" /></td>
+                            <td>2021</td>
+                            <td>Glow</td>
+                            <td>Alice Phoebe Lou</td>
                         </tr>
                         <tr>
-                            <td class="cover"><img src="./images/albums/Angra_angels_cry.jpg" class="img-thumbnail" width="200" /></td>
-                            <td class="annee"></td>
-                            <td class="album">Angels cry</td>
-                            <td class="groupe">Angra</td>
+                            <td><img src="./images/albums/Angra_angels_cry.jpg" class="img-thumbnail" width="200" /></td>
+                            <td>1993</td>
+                            <td>Angels cry</td>
+                            <td>Angra</td>
                         </tr>
                         <tr>
-                            <td class="cover"><img src="./images/albums/radiohead-the-bends-cover.jpg" class="img-thumbnail" width="200" /></td>
-                            <td class="annee"></td>
-                            <td class="album">The bends</td>
-                            <td class="groupe">Radiohead</td>
+                            <td><img src="./images/albums/radiohead-the-bends-cover.jpg" class="img-thumbnail" width="200" /></td>
+                            <td>1995</td>
+                            <td>The bends</td>
+                            <td>Radiohead</td>
                         </tr>
                         <tr>
                             <td class="cover"><img src="./images/albums/florence-and-the-machine-dance-fever.jpg" class="img-thumbnail" width="200" /></td>
-                            <td class="annee"></td>
+                            <td class="annee">2022</td>
                             <td class="album">Dance Fever</td>
                             <td class="groupe">Florence and the machine</td>
                         </tr>
@@ -352,7 +353,53 @@ $('.favoriteContent li a').on('click', function(event){
                 </table>
             </article>
             <article class="col-lg-6 my-3">
-
+                <h3>Widget maison modale sur tableau</h3>
+                <button type="button" class="btn btn-primary hidden reactiveModal" data-bs-toggle="modal" data-bs-target="#jeux">
+                    Voir le groupe
+                </button>
+                <table class="table table-dark table-striped reactiveModal" data-bs-target="#jeux" data-modal-title="Mes jeux préférés">
+                    <thead>
+                        <tr>
+                            <th>Année</th>
+                            <th>Album</th>
+                            <th>Groupe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1992</td>
+                            <td>Nevermind</td>
+                            <td>Nirvana</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Glow</td>
+                            <td>Alice Phoebe Lou</td>
+                        </tr>
+                        <tr>
+                            <td>1993</td>
+                            <td>Angels cry</td>
+                            <td>Angra</td>
+                        </tr>
+                        <tr>
+                            <td>1995</td>
+                            <td>The bends</td>
+                            <td>Radiohead</td>
+                        </tr>
+                        <tr>
+                            <td class="annee">2022</td>
+                            <td class="album">Dance Fever</td>
+                            <td class="groupe">Florence and the machine</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Année</th>
+                            <th>Album</th>
+                            <th>Groupe</th>
+                        </tr>
+                    </tfoot>
+                </table>
             </article>
             <article class="col-lg-6 my-3">
 
@@ -369,15 +416,32 @@ $('.favoriteContent li a').on('click', function(event){
             &copy; DAWAN - 2024
         </div>
     </footer>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="bandList" tabindex="-1" aria-labelledby="bandListLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h2 class="modal-title fs-5" id="bandListLabel"></h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="jeux" tabindex="-1" aria-labelledby="jeuxLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="jeuxLabel"></h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
