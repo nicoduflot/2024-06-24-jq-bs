@@ -10,8 +10,10 @@ jQuery(function ($) {
         /* on exploite l'id dans le script pour faitre les remplacement de classe et d'attributs */
         $(`#${parent} a`).each(function(){
             /* le $(this) dans ce each() correspond à chaque lien correspondant au sélecteur CSS (les lien contenu dans la nav avec l'id favoriteTeenAgeAlbum : $('#favoriteTeenAgeAlbum a') */
-            $(this).removeClass('active');
+            /*$(this).removeClass('active');
             $(this).removeAttr('aria-current');
+            */
+            $(this).removeClass('active').removeAttr('aria-current');
         });
         /* le $(this) suivant correspond lui au lien cliqué */
         $(this).addClass('active');
