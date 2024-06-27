@@ -1,79 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formation JQuery - Ajax</title>
+    <title>Formation JQUERY - Rappels JS</title>
+    <!--
+    Ajout des fichiers JS et CSS pour Bootstrap (et JQuery)
+    -->
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <script src="./js/popper.js"></script>
     <script src="./js/jquery-3.7.1.js"></script>
     <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <script src="./js/jqbootstrap.js"></script>
-    <link rel="stylesheet" href="./css/style.css" />
 </head>
-<body id="top">
+
+<body>
     <header class="bg-dark text-white py-2">
         <div class="container">
-            <h1 class="m-0">Jquery <small>Formation Dawan</small></h1>
+            <h1>JQUERY <small>Formation DAWAN</small></h1>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav class="navbar bg-dark navbar-expand-md" data-bs-theme="dark">
         <div class="container">
-          <a class="navbar-brand" href="index.html">JQUERY</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipale" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navPrincipale">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="./rappelsJs.html">Rappel Js</a>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Introduction JQuery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./JQueryCss.html">Jquery & CSS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./ajax.html">Ajax</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./jqbootstrap.html">JQuery & Bootstrap</a>
-              </li>
-              <!--
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-              -->
-            </ul>
-            <!--
+            <a class="navbar-brand" href="./index.html">Accueil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-princ"
+                aria-controls="nav-princ" aria-expanded="false" aria-label="Active la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-princ">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./rappels-js.html">Rappels JS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Introduction JQuery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./jquerycss.html">JQuery & CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ajax.html">JQuery Ajax</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./jqbootstrap.html">JQuery & bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link goBottom" href="#">Bas de page</a>
+                    </li>
+                    <!--
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                    -->
+                </ul>
+                <!--
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-            -->
-          </div>
-        </div>
-      </nav>
-    <nav>
-        <div class="container">
-            <ul>
-                <li>
-                    <a href="#" class="goBottom">Bas de la page</a>
-                </li>
-            </ul>
+                -->
+            </div>
         </div>
     </nav>
     <main class="container">
