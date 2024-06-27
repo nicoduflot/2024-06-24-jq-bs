@@ -22,7 +22,7 @@
     margin: 2px;
 }
 
-#allPosts, #allUsers, #showRss, #showUsersList{
+#allPosts, #allUsers, #showRss, #showUsersList, #allAlbums{
     max-width: 700px;
     height: 300px;
     overflow-y: auto;

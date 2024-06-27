@@ -312,31 +312,31 @@ $('.favoriteContent li a').on('click', function(event){
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img src="./images/albums/nirvana-nevermind-cover.jpg" class="img-thumbnail" width="200" /></td>
+                            <td><img src="./images/albums/nirvana-nevermind-cover.jpg" class="img-thumbnail" style="max-width: 150px;"  /></td>
                             <td>1992</td>
                             <td>Nevermind</td>
                             <td>Nirvana</td>
                         </tr>
                         <tr>
-                            <td><img src="./images/albums/alice-phoebe-lou-glow-cover.jpg" class="img-thumbnail" width="200" /></td>
+                            <td><img src="./images/albums/alice-phoebe-lou-glow-cover.jpg" class="img-thumbnail"  style="max-width: 150px;" /></td>
                             <td>2021</td>
                             <td>Glow</td>
                             <td>Alice Phoebe Lou</td>
                         </tr>
                         <tr>
-                            <td><img src="./images/albums/Angra_angels_cry.jpg" class="img-thumbnail" width="200" /></td>
+                            <td><img src="./images/albums/Angra_angels_cry.jpg" class="img-thumbnail"  style="max-width: 150px;" /></td>
                             <td>1993</td>
                             <td>Angels cry</td>
                             <td>Angra</td>
                         </tr>
                         <tr>
-                            <td><img src="./images/albums/radiohead-the-bends-cover.jpg" class="img-thumbnail" width="200" /></td>
+                            <td><img src="./images/albums/radiohead-the-bends-cover.jpg" class="img-thumbnail"  style="max-width: 150px;" /></td>
                             <td>1995</td>
                             <td>The bends</td>
                             <td>Radiohead</td>
                         </tr>
                         <tr>
-                            <td class="cover"><img src="./images/albums/florence-and-the-machine-dance-fever.jpg" class="img-thumbnail" width="200" /></td>
+                            <td class="cover"><img src="./images/albums/florence-and-the-machine-dance-fever.jpg" class="img-thumbnail"  style="max-width: 150px;" /></td>
                             <td class="annee">2022</td>
                             <td class="album">Dance Fever</td>
                             <td class="groupe">Florence and the machine</td>
@@ -401,8 +401,14 @@ $('.favoriteContent li a').on('click', function(event){
                     </tfoot>
                 </table>
             </article>
-            <article class="col-lg-6 my-3">
+            <article class="col-lg-12 my-3">
+                <h3>Pagination dynamique</h3>
+                <div id="allAlbums">
 
+                </div>
+                <div id="allAlbumsPages">
+                    
+                </div>
             </article>
         </section>
         <section class="row">
