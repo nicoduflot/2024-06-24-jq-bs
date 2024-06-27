@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation JQuery - Ajax</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/popper.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jqbootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body id="top">
+    <header class="bg-dark text-white py-2">
+        <div class="container">
+            <h1 class="m-0">Jquery <small>Formation Dawan</small></h1>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">JQUERY</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipale" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navPrincipale">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="./rappelsJs.html">Rappel Js</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Introduction JQuery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./JQueryCss.html">Jquery & CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ajax.html">Ajax</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./jqbootstrap.html">JQuery & Bootstrap</a>
+              </li>
+              <!--
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              -->
+            </ul>
+            <!--
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            -->
+          </div>
+        </div>
+      </nav>
+    <nav>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#" class="goBottom">Bas de la page</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <h2>Utiliser JQuery avec Bootstrap</h2>
+        <section class="row my-3">
+            <article class="col-lg-6 my-3">
+                <h3>Nav & tab dynamique</h3>
+                <ul class="nav nav-tabs" id="favoriteTeenAgeAlbum">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#" data-target="cover">Cover</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" data-target="band">Band</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" data-target="lineup">Line up</a>
+                    </li>
+                  </ul>
+                  <div class="border-end border-start border-bottom content">
+                      <div id="cover">
+                        <h4>Nevermind</h4>
+                        <img class="img-fluid" src="./images/nirvana-nevermind-cover.jpg" />
+                      </div>
+                      <div id="band" class="hidden">
+                        <h4>Nirvana</h4>
+                        <p>
+                            Nirvana ([nɪɹˈvɑnə]) est un groupe de grunge américain, originaire d'Aberdeen, dans l'État de Washington, formé en 1987 par le chanteur-guitariste Kurt Cobain et le bassiste Krist Novoselic. Après Bleach en 1989, son premier album studio produit par le label indépendant Sub Pop et une succession de batteurs, la formation se stabilise avec l'arrivée de Dave Grohl en octobre 1990.
+                        </p>
+                      </div>
+                      <div id="lineup" class="hidden">
+                        <h4>Derniers membres</h4>
+                        <ul>
+                            <li>Kurt Cobain - chant, guitare (1987–1994)</li>
+                            <li>Krist Novoselic - basse (1987–1994)</li>
+                            <li>Dave Grohl - batterie, chœurs (octobre </li>1990–1994)
+                        </ul>
+                        <h4>Musiciens de tournée</h4>
+                        <ul>
+                            <li>Pat Smear - guitare, chœurs (septembre 1993–1994)</li>
+                            <li>Melora Creager – violoncelle (1994)</li>
+                        </ul>
+                        <h4>Anciens membres</h4>
+                        <ul>
+                            <li>Aaron Burckhard - batterie (1987–1988, avril 1988)</li>
+                            <li>Dale Crover - batterie (janvier-février 1988, août 1990)</li>
+                            <li>Dave Foster - batterie (mars-avril 1988)</li>
+                            <li>Chad Channing - batterie (mai 1988-mai 1990)</li>
+                            <li>Dan Peters - batterie (juin 1990-septembre 1990)</li>
+                            <li>Jason Everman - guitare rythmique (février 1989-juin 1989)</li>
+                        </ul>
+                        <h4>Anciens musiciens de tournée</h4>
+                        <ul>
+                          <li>John Duncan - guitare (1993)</li>
+                          <li>Lori Goldston - violoncelle (novembre 1993–début 1994)</li>
+                        </ul>
+                      </div>
+                  </div>
+            </article>
+        </section>
+        <section class="row">
+            <article class="col-lg-6 my-3">
+                
+            </article>
+            <article class="col-lg-6 my-3">
+                
+            </article>
+            <article class="col-lg-6 my-3">
+                
+            </article>
+            <article class="col-lg-6 my-3">
+                
+            </article>
+        </section>
+        <section class="row">
+            <article class="col-lg-12">
+               
+            </article>
+        </section>
+    </main>
+    <footer class="bg-dark text-white py-2 mt-5">
+        <div class="container py-3">
+            &copy; DAWAN - 2024
+        </div>
+    </footer>
+</body>
+</html>
