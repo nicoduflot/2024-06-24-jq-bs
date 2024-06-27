@@ -83,30 +83,72 @@
         <section class="row my-3">
             <article class="col-lg-6 my-3">
                 <h3>Nav & tab dynamique</h3>
-                <div id="favoriteTeenAgeAlbum">
+                <p>
+                    Certains composants de bootstrap sont "livrés" sans automatisme Jacvascripts ou JQuery, il faut développer soit-même les interactions
+                </p>
+                <p>
+                    Le code suivant est fait pour une implantation unique des tabs
+                </p>
+                <code>
+                    <pre>
+$('#favoriteTeenAgeAlbum a').on('click', function(event){
+    event.preventDefault();
+    $('#favoriteTeenAgeAlbum a').each(function(){
+        /* 
+        le $(this) dans ce each() correspond à 
+        chaque lien correspondant au sélecteur 
+        CSS (les lien contenu dans la nav avec 
+        l'id favoriteTeenAgeAlbum : $('#favoriteTeenAgeAlbum a')
+        */
+        $(this).removeClass('active');
+        $(this).removeAttr('aria-current');
+    });
+    /* 
+    le $(this) suivant correspond lui au lien cliqué 
+    */
+    $(this).addClass('active');
+    $(this).attr('aria-current', 'page');
+    /*console.log($(this)[0].dataset.target);*/
+    const info = $(this)[0].dataset.target;
+    $('#favoriteTeenAgeAlbum .content > div').each(function(){
+        /* 
+        $(this) correspond à toutes les div contenant 
+        les infos que l'on parcours
+        */
+        $(this).addClass('hidden');
+    });
+    $(`#favoriteTeenAgeAlbum .content > div#${info}`).removeClass('hidden');
+});
+                    </pre>
+                </code>
+                <div id="favoriteTeenAgeAlbum" class="favoriteContent">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#" data-target="cover">Cover</a>
+                            <a class="nav-link active" aria-current="page" href="#" data-target="cover">Cover</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#" data-target="band">Band</a>
+                            <a class="nav-link" href="#" data-target="band">Band</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#" data-target="lineup">Line up</a>
+                            <a class="nav-link" href="#" data-target="lineup">Line up</a>
                         </li>
-                      </ul>
-                      <div class="border-end border-start border-bottom content">
-                          <div id="cover">
+                    </ul>
+                    <div class="border-end border-start border-bottom content">
+                        <div id="cover" class="m-1">
                             <h4>Nevermind</h4>
                             <img class="img-fluid" src="./images/nirvana-nevermind-cover.jpg" />
-                          </div>
-                          <div id="band" class="hidden">
+                        </div>
+                        <div id="band" class="hidden m-1">
                             <h4>Nirvana</h4>
                             <p>
-                                Nirvana ([nɪɹˈvɑnə]) est un groupe de grunge américain, originaire d'Aberdeen, dans l'État de Washington, formé en 1987 par le chanteur-guitariste Kurt Cobain et le bassiste Krist Novoselic. Après Bleach en 1989, son premier album studio produit par le label indépendant Sub Pop et une succession de batteurs, la formation se stabilise avec l'arrivée de Dave Grohl en octobre 1990.
+                                Nirvana ([nɪɹˈvɑnə]) est un groupe de grunge américain, originaire d'Aberdeen, dans
+                                l'État de Washington, formé en 1987 par le chanteur-guitariste Kurt Cobain et le
+                                bassiste Krist Novoselic. Après Bleach en 1989, son premier album studio produit par le
+                                label indépendant Sub Pop et une succession de batteurs, la formation se stabilise avec
+                                l'arrivée de Dave Grohl en octobre 1990.
                             </p>
-                          </div>
-                          <div id="lineup" class="hidden">
+                        </div>
+                        <div id="lineup" class="hidden m-1">
                             <h4>Derniers membres</h4>
                             <ul>
                                 <li>Kurt Cobain - chant, guitare (1987–1994)</li>
@@ -129,31 +171,136 @@
                             </ul>
                             <h4>Anciens musiciens de tournée</h4>
                             <ul>
-                              <li>John Duncan - guitare (1993)</li>
-                              <li>Lori Goldston - violoncelle (novembre 1993–début 1994)</li>
+                                <li>John Duncan - guitare (1993)</li>
+                                <li>Lori Goldston - violoncelle (novembre 1993–début 1994)</li>
                             </ul>
-                          </div>
-                      </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-lg-6 my-3">
+                <h3>Factorisation d'un script</h3>
+                <p>
+                    Si on veut pourvoir réutiliser le script précédent sans avoir à "copier - coller" et modifier seulement le code au niveau des id des éléments, il faut modifier la structure html et factoriser le code en récupérérant l'id de l'élément ancètre le plus proche correspondant à la classe de notre widget (web gadjet) et seulement l'id du doit doit être modifié pour qu'on ai les comportements demandés
+                </p>
+                <code>
+                    <pre>
+$('.favoriteContent li a').on('click', function(event){
+    /* 
+    on repère le clique sur n'importe quel lien situé dans un élément ayant la classe favoriteContent 
+    on annule le comportement par défaut d'un clic sur un lien 
+    */
+    event.preventDefault();
+    /* 
+    on repère l'id de l'élément ancètre le plus proche possèdant la classe favoriteContent
+    */
+    const parent = $(this).closest('.favoriteContent').attr('id');
+    /* 
+    on exploite l'id dans le script pour faire les remplacements de classe et d'attributs
+    */
+    $(`#${parent} a`).each(function(){
+        $(this).removeClass('active');
+        $(this).removeAttr('aria-current');
+    });
+    $(this).addClass('active');
+    $(this).attr('aria-current', 'page');
+    const info = $(this)[0].dataset.target;
+    $(`#${parent} .content > div`).each(function(){
+        $(this).addClass('hidden');
+    });
+    $(`#${parent} .content > div#${info}`).removeClass('hidden');
+});                        
+                    </pre>
+                </code>
+                <div id="favoriteTeenAgeAlbum2" class="favoriteContent">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" data-target="cover">Cover</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-target="band">Band</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-target="lineup">Line up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-target="albums">Albums</a>
+                        </li>
+                    </ul>
+                    <div class="border-end border-start border-bottom content">
+                        <div id="cover" class="m-1">
+                            <h4>Alice Phoebe Lou</h4>
+                            <img class="img-fluid" src="./images/alice-phoebe-lou-glow-cover.jpg" />
+                        </div>
+                        <div id="band" class="hidden m-1">
+                            <h4>Alice Phoebe Lou</h4>
+                            <p>
+                                Alice Phoebe Lou, née le 19 juillet 1993, est une autrice-compositrice-interprète
+                                sud-africaine. Encore jeune, elle quitte l'Afrique du Sud pour l'Europe et commence par
+                                donner des concerts de rue, en chantant accompagnée d'une guitare, puis rencontre petit
+                                à petit le succès. Cela lui permet de sortir plusieurs EPs et albums qu'elle finance
+                                elle-même malgré des propositions de l'industrie musicale. L'évolution de sa carrière
+                                l'amène à jouer dans le monde entier et dans de grands festivals, mais elle continue de
+                                rencontrer ses auditeurs dans des lieux publics. Ses compositions mélangent divers
+                                genres musicaux comme la folk, la pop, le jazz. Elle cite parmi ses influences des
+                                artistes comme Patti Smith, Miriam Makeba, PJ Harvey, Connan Mockasin ou encore Timber
+                                Timbre. Depuis 2019, elle est aussi active au sein du projet musical Strongboi.
+                            </p>
+                        </div>
+                        <div id="lineup" class="hidden m-1">
+                            <h4>Derniers membres</h4>
+                            <ul>
+                                <li>Kurt Cobain - chant, guitare (1987–1994)</li>
+                                <li>Krist Novoselic - basse (1987–1994)</li>
+                                <li>Dave Grohl - batterie, chœurs (octobre </li>1990–1994)
+                            </ul>
+                            <h4>Musiciens de tournée</h4>
+                            <ul>
+                                <li>Pat Smear - guitare, chœurs (septembre 1993–1994)</li>
+                                <li>Melora Creager – violoncelle (1994)</li>
+                            </ul>
+                            <h4>Anciens membres</h4>
+                            <ul>
+                                <li>Aaron Burckhard - batterie (1987–1988, avril 1988)</li>
+                                <li>Dale Crover - batterie (janvier-février 1988, août 1990)</li>
+                                <li>Dave Foster - batterie (mars-avril 1988)</li>
+                                <li>Chad Channing - batterie (mai 1988-mai 1990)</li>
+                                <li>Dan Peters - batterie (juin 1990-septembre 1990)</li>
+                                <li>Jason Everman - guitare rythmique (février 1989-juin 1989)</li>
+                            </ul>
+                            <h4>Anciens musiciens de tournée</h4>
+                            <ul>
+                                <li>John Duncan - guitare (1993)</li>
+                                <li>Lori Goldston - violoncelle (novembre 1993–début 1994)</li>
+                            </ul>
+                        </div>
+                        <div id="albums" class="hidden m-1">
+                            <h4>Albums</h4>
+                            <ul>
+                                <li>Live at Grüner Salon (2014, CD autoproduits vendus lors des concerts39, la version mp3 est toujours disponible sur son site)</li>
+                                <li>Orbit (autoproduit en 2016; promu par exemple par Motor Music66)</li>
+                                <li>Paper Castles (autoproduit le 8 mars 2019, avec des services rachetés à Motor Music67,68,69)</li>
+                                <li>Glow (autoproduit sorti le 19 mars 2021)70</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
         <section class="row">
             <article class="col-lg-6 my-3">
-                
+
             </article>
             <article class="col-lg-6 my-3">
-                
+
             </article>
             <article class="col-lg-6 my-3">
-                
-            </article>
-            <article class="col-lg-6 my-3">
-                
+
             </article>
         </section>
         <section class="row">
             <article class="col-lg-12">
-               
+
             </article>
         </section>
     </main>
@@ -163,4 +310,5 @@
         </div>
     </footer>
 </body>
+
 </html>
