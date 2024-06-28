@@ -1,0 +1,39 @@
+@use "sass:math";
+/* 
+Les commentaires en blocs sont reproduits dans le css final
+*/
+
+// on peut commenter en ligne mais ça ne se reporte pas sur le css final
+
+$fontFamily: Arial, Helvetica, sans-serif;
+$bodyColor: #333;
+$navLinkColor: rgb(35, 114, 233);
+$fontSize: 1.2rem;
+
+:root{
+    font-family: $fontFamily;
+    color: $bodyColor;
+    font-size: $fontSize;
+}
+
+body{
+    >header{
+        h1{
+            font-size: calc(2rem + 0.5vw);
+        }
+    }
+
+    >nav{
+        ul{
+            list-style-type: none;
+
+            a, a:visited{
+                text-decoration: none;
+                color: $navLinkColor;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
