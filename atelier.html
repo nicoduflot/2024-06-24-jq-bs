@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,138 @@
     <!--
     ne pas oublier de mettre jquery et bootstrap ici avant le code JQuery
     -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/popper.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
     <script src="./js/atelier.js"></script>
     <link rel="stylesheet" href="./css/atelier.css" />
 </head>
-<body>
+
+<body class="bg-dark text-white">
+    <header class="bg-dark text-white m-0 py-2">
+        <div class="container">
+            <h1>My Little shop</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-3  p-0">
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
+                            <form class="d-flex pt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Trouver..."
+                                    aria-label="Search" id="searchP">
+                                <button class="btn btn-outline-success" type="submit"
+                                    id="searchProducts">Trouver...</button>
+                                <input type="hidden" name="defaultProduct" id="defaultProduct" value="products" />
+                            </form>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <main class="col">
+                <div class="container">
+                    <div class="row flex-lg-row-reverse align-items-top g-5 pt-3">
+                        <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="./images/albums/Angra_angels_cry.jpg" class="d-block mx-lg-auto img-fluid"
+                                alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Nouveau CD dans la médiathèque
+                            </h2>
+                            <p class="lead">Angels Cry est le premier album du groupe brésilien de heavy metal Angra.
+                            </p>
+                            <ol>
+                                <li>"Unfinished Allegro" – 1:14</li>
+                                <li>"Carry On" – 5:03</li>
+                                <li>"Time" – 5:55</li>
+                                <li>"Angels Cry" – 6:48</li>
+                                <li>"Stand Away" – 4:55</li>
+                                <li>"Never Understand" – 7:49</li>
+                                <li>"Wuthering Heights" – 4:40</li>
+                                <li>"Streets of Tomorrow" – 5:03</li>
+                                <li>"Evil Warning" – 6:43</li>
+                                <li>"Lasting Child" – 7:37
+                                    <ol type="I">
+                                        <li>"The Parting Words" – 4:02</li>
+                                        <li>"Renaissance" – 3:35</li>
+
+                                    </ol>
+                                </li>
+                            </ol>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                <audio id="thatSong" src="./ressources/02_02-Carry on.mp3"></audio>
+                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" id="playSong"
+                                    data-target="thatSong">Écoute du deuxième morceau</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg px-4" id="stopSong"
+                                    data-target="thatSong">Stop</button>
+                            </div>
+                            <div class="mt-3">
+                                Changer le volume
+                                <input class="form-control" type="range" id="slider" value="10" maxlength="100" min="0"
+                                    max="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="dataFeed">
+
+                </div>
+                <div class="modal fade" data-bs-theme="dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="exampleModalLabel"></h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid" />
+                                    </div>
+                                    <div class="col">
+                                        <p class="content">
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="py-5">
+            <div class="container">
+                &copysr; DAWAN - 2024
+            </div>
+        </footer>
+    </div>
+
+    <!-- 
     <h2>Atelier</h2>
     <p>
         Créer une page sur un sujet de votre choix.
@@ -27,5 +156,8 @@
     <p>
         L'appel des données se fait par un bouton et les données formatées sront a afficher dans un élément de la page.
     </p>
+    -->
+
 </body>
+
 </html>
