@@ -1,25 +1,29 @@
-$fontFamily: Arial, Helvetica, sans-serif;
+// variables générales police, couleur par défaut d'écriture, des liens de navigation, taille de base de la police, couleur de bordure de base
+$fontFamily: Roboto, Arial, Helvetica, sans-serif;
 $bodyColor: #333;
 $navLinkColor: rgb(35, 114, 233);
 $fontSize: 1.2rem;
+$baseborder: #eee;
 
-/*$breakpoints: 576px, 768px, 992px, 1200px, 1400px;*/
-
+// map pour les media queries, liste des breakpoint du css
 $breakpoints: (
+    xs: 480px,
     sm: 576px, 
     md: 768px, 
     lg: 992px, 
     xl: 1200px, 
     xxl: 1400px,
-    xxx: 1600px
+    xxxl: 1600px
 );
 
+// map pour les media queries, liste des largeur max du contenu par breakpoint du css
 $container-width: (
-    sm: 540px, 
-    md: 720px, 
-    lg: 960px, 
-    xl: 1140px, 
-    xxl: 1320px,
-    xxx: 1560px
+    xs: 460,
+    sm: 540, 
+    md: 720, 
+    lg: 960, 
+    xl: 1140, 
+    xxl: 1320,
+    xxxl: 1560
 );
 

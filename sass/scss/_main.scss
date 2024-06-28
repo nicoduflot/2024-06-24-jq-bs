@@ -1,3 +1,9 @@
+.container{
+    @include mqBpC();
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body{
     margin: 0;
     >header{
@@ -5,18 +11,33 @@ body{
             font-size: calc(2rem + 0.5vw);
         }
     }
-
     >nav{
-        ul{
+        ul.navigation{
             list-style-type: none;
+            padding: 0;
+            li:first-child{
+                border-top: 1px solid $baseborder;
+            }
+            li{
+                border-bottom: 1px solid $baseborder;
+                line-height: 2rem;
+            }
 
             a, a:visited{
                 text-decoration: none;
                 color: $navLinkColor;
+                display: block;
+                padding-left: 1rem;
+                padding-right: 1rem;
                 &:hover{
                     text-decoration: underline;
                 }
             }
         }
+    }
+
+    > footer > div{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }

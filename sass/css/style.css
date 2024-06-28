@@ -1,13 +1,20 @@
+@charset "UTF-8";
 /* 
 Les commentaires en blocs sont reproduits dans le css final
 */
-/*$breakpoints: 576px, 768px, 992px, 1200px, 1400px;*/
+/* _variables */
+/* _mixins */
+/* _root */
+/* import de la police roboto */
+@import url("./roboto.css");
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   color: #333;
   font-size: 1.2rem;
 }
 
+/* _reboot */
+/* reboot css */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -18,47 +25,128 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1rem;
 }
 
+/* _main */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   margin: 0;
 }
 body > header h1 {
   font-size: calc(2rem + 0.5vw);
 }
-body > nav ul {
+body > nav ul.navigation {
   list-style-type: none;
+  padding: 0;
 }
-body > nav ul a, body > nav ul a:visited {
+body > nav ul.navigation li:first-child {
+  border-top: 1px solid #eee;
+}
+body > nav ul.navigation li {
+  border-bottom: 1px solid #eee;
+  line-height: 2rem;
+}
+body > nav ul.navigation a, body > nav ul.navigation a:visited {
   text-decoration: none;
   color: rgb(35, 114, 233);
+  display: block;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-body > nav ul a:hover, body > nav ul a:visited:hover {
+body > nav ul.navigation a:hover, body > nav ul.navigation a:visited:hover {
   text-decoration: underline;
 }
+body > footer > div {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
-/* @each est un foreach sur list ou map */
+/* _media-queries */
+/* 
+@each est un foreach sur list ou map
+pour chaque breakpoint, sa valeur dans le map breakpoints
+*/
+@media screen and (min-width: 480px) {
+  /* breakpoint : xs, value 480px */
+  .container {
+    /* on récupère la value indiqué à l'ince breakpoint dans le map container-width
+    xs : 460
+    */
+    width: 460px;
+  }
+}
 @media screen and (min-width: 576px) {
-  /* breakpoint : sm, max screen width 576px */
-  /* toto */
+  /* breakpoint : sm, value 576px */
+  .container {
+    /* on récupère la value indiqué à l'ince breakpoint dans le map container-width
+    sm : 540
+    */
+    width: 540px;
+  }
 }
 @media screen and (min-width: 768px) {
-  /* breakpoint : md, max screen width 768px */
-  /* toto */
+  /* breakpoint : md, value 768px */
+  .container {
+    /* on récupère la value indiqué à l'ince breakpoint dans le map container-width
+    md : 720
+    */
+    width: 720px;
+  }
+  /* 
+  si la valeur associé au breakpoint est égale à 720
+  on change l'affichage de la navigation
+  md : 720
+  */
+  body > nav ul.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  body > nav ul.navigation li:first-child {
+    border-top: unset;
+  }
+  body > nav ul.navigation li {
+    border-bottom: unset;
+  }
 }
 @media screen and (min-width: 992px) {
-  /* breakpoint : lg, max screen width 992px */
-  /* toto */
+  /* breakpoint : lg, value 992px */
+  .container {
+    /* on récupère la value indiqué à l'ince breakpoint dans le map container-width
+    lg : 960
+    */
+    width: 960px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  /* breakpoint : xl, max screen width 1200px */
-  /* toto */
+  /* breakpoint : xl, value 1200px */
+  .container {
+    /* on récupère la value indiqué à l'ince breakpoint dans le map container-width
+    xl : 1140
+    */
+    width: 1140px;
+  }
 }
 @media screen and (min-width: 1400px) {
-  /* breakpoint : xxl, max screen width 1400px */
-  /* toto */
+  /* breakpoint : xxl, value 1400px */
+  .container {
+    /* on récupère la value indiqué à l'ince breakpoint dans le map container-width
+    xxl : 1320
+    */
+    width: 1320px;
+  }
 }
 @media screen and (min-width: 1600px) {
-  /* breakpoint : xxx, max screen width 1600px */
-  /* toto */
+  /* breakpoint : xxxl, value 1600px */
+  .container {
+    /* on récupère la value indiqué à l'ince breakpoint dans le map container-width
+    xxxl : 1560
+    */
+    width: 1560px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

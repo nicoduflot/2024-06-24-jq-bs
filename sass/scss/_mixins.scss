@@ -1,0 +1,10 @@
+//mixin de création de largeur maximal du contenu
+// utilisée dans _media-queries
+@mixin mqBpC($bpWidth : 100%){
+    @if($bpWidth == 100%){
+        width: 100%;
+    }
+    @else{
+        width: #{$bpWidth}px;
+    }
+}

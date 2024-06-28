@@ -1,14 +1,22 @@
 @charset "UTF-8";
 @use "sass:math";
 @use "sass:list";
+@use "sass:map";
 /* 
 Les commentaires en blocs sont reproduits dans le css final
 */
 
 // on peut commenter en ligne mais ça ne se reporte pas sur le css final
 
+/* _variables */
 @import 'variables';
+/* _mixins */
+@import 'mixins';
+/* _root */
 @import 'root';
+/* _reboot */
 @import 'reboot';
+/* _main */
 @import 'main';
+/* _media-queries */
 @import 'media-queries';
