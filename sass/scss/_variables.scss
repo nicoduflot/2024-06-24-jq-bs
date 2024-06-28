@@ -1,0 +1,25 @@
+$fontFamily: Arial, Helvetica, sans-serif;
+$bodyColor: #333;
+$navLinkColor: rgb(35, 114, 233);
+$fontSize: 1.2rem;
+
+/*$breakpoints: 576px, 768px, 992px, 1200px, 1400px;*/
+
+$breakpoints: (
+    sm: 576px, 
+    md: 768px, 
+    lg: 992px, 
+    xl: 1200px, 
+    xxl: 1400px,
+    xxx: 1600px
+);
+
+$container-width: (
+    sm: 540px, 
+    md: 720px, 
+    lg: 960px, 
+    xl: 1140px, 
+    xxl: 1320px,
+    xxx: 1560px
+);
+

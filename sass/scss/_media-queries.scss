@@ -1,0 +1,9 @@
+
+/* @each est un foreach sur list ou map */
+
+@each $breakpoint, $value in $breakpoints{
+    @media screen and (min-width: #{$value}){
+        /* breakpoint : #{$breakpoint}, max screen width #{$value} */
+        /* toto */
+    }
+}

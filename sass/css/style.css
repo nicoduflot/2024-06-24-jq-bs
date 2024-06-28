@@ -1,12 +1,26 @@
 /* 
 Les commentaires en blocs sont reproduits dans le css final
 */
+/*$breakpoints: 576px, 768px, 992px, 1200px, 1400px;*/
 :root {
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
   font-size: 1.2rem;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+body {
+  margin: 0;
+}
 body > header h1 {
   font-size: calc(2rem + 0.5vw);
 }
@@ -19,6 +33,32 @@ body > nav ul a, body > nav ul a:visited {
 }
 body > nav ul a:hover, body > nav ul a:visited:hover {
   text-decoration: underline;
+}
+
+/* @each est un foreach sur list ou map */
+@media screen and (min-width: 576px) {
+  /* breakpoint : sm, max screen width 576px */
+  /* toto */
+}
+@media screen and (min-width: 768px) {
+  /* breakpoint : md, max screen width 768px */
+  /* toto */
+}
+@media screen and (min-width: 992px) {
+  /* breakpoint : lg, max screen width 992px */
+  /* toto */
+}
+@media screen and (min-width: 1200px) {
+  /* breakpoint : xl, max screen width 1200px */
+  /* toto */
+}
+@media screen and (min-width: 1400px) {
+  /* breakpoint : xxl, max screen width 1400px */
+  /* toto */
+}
+@media screen and (min-width: 1600px) {
+  /* breakpoint : xxx, max screen width 1600px */
+  /* toto */
 }
 
 /*# sourceMappingURL=style.css.map */

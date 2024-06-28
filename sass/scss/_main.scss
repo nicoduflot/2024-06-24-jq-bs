@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    >header{
+        h1{
+            font-size: calc(2rem + 0.5vw);
+        }
+    }
+
+    >nav{
+        ul{
+            list-style-type: none;
+
+            a, a:visited{
+                text-decoration: none;
+                color: $navLinkColor;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
